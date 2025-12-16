@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Nineetiestudio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-header {
+            padding: 8rem 0 4rem;
+            text-align: center;
+            background-color: var(--bg-secondary);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+            padding-bottom: 4rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            height: 400px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .view-btn {
+            color: white;
+            border: 1px solid white;
+            padding: 0.5rem 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Nineetiestudio Logo" class="nav-logo">
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="services.html" class="nav-link">Layanan</a></li>
+                <li><a href="gallery.html" class="nav-link active">Galeri</a></li>
+                <li><a href="contact.html" class="nav-link">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Karya Pilihan</h1>
+            <p style="color: var(--text-secondary);">Kurasi momen favorit kami.</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="gallery-grid hidden-section">
+                <div class="gallery-item">
+                    <img src="images/gallery_art.png" alt="Potret Artistik">
+                    <div class="gallery-overlay"><span class="view-btn">Pre Wedding of Della & Fakhrul</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery_wedding_1.png" alt="Pernikahan">
+                    <div class="gallery-overlay"><span class="view-btn">The Wedding of (Destia & Dirman)</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery_wedding_collage.jpg" alt="Kolase Pernikahan">
+                    <div class="gallery-overlay"><span class="view-btn">The Wedding of (Riski Alya & Julian
+                            Saputra)</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery_event.png" alt="Acara Formal">
+                    <div class="gallery-overlay"><span class="view-btn">Promosi Doktor (Kak Sri Wahyuni)</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery_birthday.png" alt="Ulang Tahun">
+                    <div class="gallery-overlay"><span class="view-btn">Sweet Seventeen (Kak Karynn)</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="images/logo.png" alt="Nineetiestudio Logo" class="footer-logo">
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/nineetiestudio?igsh=MWZvNjd6eHI0dzQzdg==" target="_blank"
+                    class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/6281296986113" target="_blank" class="social-link"><i
+                        class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" class="social-link"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy; 2024 Nineetiestudio. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

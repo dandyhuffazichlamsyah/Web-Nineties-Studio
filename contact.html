@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Nineetiestudio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-header {
+            padding: 8rem 0 4rem;
+            text-align: center;
+            background-color: var(--bg-secondary);
+        }
+
+        .contact-container {
+            display: flex;
+            gap: 4rem;
+            margin-top: 4rem;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .form-container {
+            flex: 1.5;
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border: 1px solid var(--border);
+        }
+
+        .info-item {
+            margin-bottom: 2rem;
+        }
+
+        .info-item h3 {
+            font-size: 1.2rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        @media(max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Nineetiestudio Logo" class="nav-logo">
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="services.html" class="nav-link">Layanan</a></li>
+                <li><a href="gallery.html" class="nav-link">Galeri</a></li>
+                <li><a href="contact.html" class="nav-link active">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Hubungi Kami</h1>
+            <p style="color: var(--text-secondary);">Mari ciptakan sesuatu yang indah bersama.</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="container hidden-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3><i class="fa-regular fa-envelope"></i> Email</h3>
+                        <p>hello@nineetiestudio.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h3><i class="fa-brands fa-whatsapp"></i> WhatsApp</h3>
+                        <p>+62 812-9698-6113</p>
+                    </div>
+                    <div class="info-item">
+                        <h3><i class="fa-solid fa-location-dot"></i> Studio</h3>
+                        <p>Jakarta, Indonesia<br>(By Appointment Only)</p>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <p style="margin-bottom: 1rem;">Ikuti kami untuk update harian:</p>
+                        <div style="display: flex; gap: 1rem;">
+                            <a href="https://www.instagram.com/nineetiestudio?igsh=MWZvNjd6eHI0dzQzdg==" target="_blank"
+                                class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <form>
+                        <div class="form-group">
+                            <label>Nama</label>
+                            <input type="text" placeholder="Nama Anda">
+                        </div>
+                        <div class="form-group">
+                            <label>Nomor WhatsApp</label>
+                            <input type="tel" placeholder="08xx-xxxx-xxxx">
+                        </div>
+                        <div class="form-group">
+                            <label>Layanan yang Diminati</label>
+                            <select>
+                                <option>Pernikahan</option>
+                                <option>Prewedding</option>
+                                <option>Wisuda</option>
+                                <option>Ulang Tahun</option>
+                                <option>Tunangan</option>
+                                <option>Lainnya</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Pesan</label>
+                            <textarea rows="5" placeholder="Ceritakan tentang acara Anda..."></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary" style="width: 100%;"
+                            onclick="window.open('https://wa.me/6281296986113', '_blank')">Kirim via WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="images/logo.png" alt="Nineetiestudio Logo" class="footer-logo">
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/nineetiestudio?igsh=MWZvNjd6eHI0dzQzdg==" target="_blank"
+                    class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" class="social-link"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy; 2024 Nineetiestudio. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
