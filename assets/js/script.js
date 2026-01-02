@@ -369,13 +369,18 @@ document.addEventListener('DOMContentLoaded', () => {
     bookingForm?.addEventListener('submit', function (e) {
         e.preventDefault();
         const formData = new FormData(this);
-        let message = `Halo Nineetiestudio!%0A%0A`;
+
+        let message = `Halo Nineetiestudio! 📸%0A%0A`;
+        message += `Saya ingin melakukan booking jasa fotografi.%0A%0A`;
+        message += `*=== DATA BOOKING ===%0A`;
 
         formData.forEach((value, key) => {
             if (value) message += `*${key}:* ${value}%0A`;
         });
 
-        window.open(`https://wa.me/6281296986113?text=${message}`, '_blank');
+        message += `%0AMohon informasi ketersediaan jadwal dan detail lebih lanjut.%0ATerima kasih! 🙏`;
+
+        window.open(`https://wa.me/6285175200452?text=${message}`, '_blank');
     });
 
     // === 17. LOADING ANIMATION ===
