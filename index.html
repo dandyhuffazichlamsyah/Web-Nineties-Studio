@@ -5,200 +5,254 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Nineetiestudio - High-Resolution Memories with Friendly Prices. Fotografi Profesional untuk Pernikahan, Wisuda, dan lainnya.">
-    <title>Nineetiestudio | Capture Every Detail</title>
-
-    <!-- Fonts -->
+        content="Nineetiestudio - High-Resolution Memories with Friendly Prices. Jasa Fotografi Profesional untuk Wedding, Wisuda, Event & Family.">
+    <title>Nineetiestudio | High-Resolution Memories</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
         rel="stylesheet">
-
-    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Nineetiestudio Logo" class="nav-logo">
-            </a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="menu-bar"></span>
-                <span class="menu-bar"></span>
-                <span class="menu-bar"></span>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-inner">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Nineetiestudio">
+                </a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="pricelist.html" class="nav-link">Packages</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="btn btn-primary">Book Now</a></li>
+                </ul>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="nav-link active">Beranda</a></li>
-                <li><a href="pricelist.html" class="nav-link">Price List</a></li>
-                <li><a href="gallery.html" class="nav-link">Galeri</a></li>
-                <li><a href="contact.html" class="nav-link">Kontak</a></li>
-            </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero" style="background-image: url('images/hero.png');">
+    <header class="hero">
+        <div class="hero-bg" style="background-image: url('images/hero.png');"></div>
+        <div class="hero-overlay"></div>
+
+        <!-- Floating Shapes -->
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+
         <div class="container hero-content">
-            <p class="hero-tagline">High-Resolution Memories with Friendly Prices</p>
-            <h1 class="hero-title">Capture Every Detail</h1>
-            <p class="hero-desc">Dari hari istimewa Anda hingga senyum sehari-hari. Kami mengubah momen Anda menjadi
-                kisah sinematik yang abadi.</p>
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="pricelist.html" class="btn btn-primary">Lihat Harga</a>
-                <a href="contact.html" class="btn">Hubungi Kami</a>
+            <div class="hero-badge reveal">
+                <i class="fa-solid fa-camera"></i>
+                <span>Est. 2021 • Jakarta</span>
+            </div>
+
+            <h1 class="hero-title reveal">
+                High-Resolution<br>
+                <em class="gradient-text">Memories</em>
+            </h1>
+
+            <p class="hero-desc reveal">
+                Mengabadikan momen terbaik Anda dengan sentuhan sinematik yang timeless. Kualitas premium, harga
+                bersahabat.
+            </p>
+
+            <div class="hero-buttons reveal">
+                <a href="pricelist.html" class="btn btn-gold magnetic">
+                    <i class="fa-solid fa-sparkles"></i> Lihat Paket
+                </a>
+                <a href="gallery.html" class="btn btn-outline magnetic">
+                    <i class="fa-solid fa-images"></i> Explore Gallery
+                </a>
             </div>
         </div>
     </header>
 
-    <!-- Services Section -->
-    <section class="services">
+    <!-- Services Preview Section -->
+    <section style="padding: var(--section-padding); background: var(--white);">
         <div class="container">
-            <h2 class="section-title text-center">Layanan Kami</h2>
-            <div class="services-grid hidden-section">
-                <!-- Wedding -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-rings-wedding"></i></div>
-                    <h3 class="service-title">Pernikahan</h3>
-                    <p>Mengabadikan keajaiban hari besar Anda dengan keanggunan sinematik dan emosi yang tulus.</p>
-                </div>
+            <div class="text-center">
+                <span class="section-label reveal">Layanan Kami</span>
+                <h2 class="reveal" style="margin-bottom: 1rem;">Abadikan Setiap <em class="gradient-text">Momen
+                        Penting</em></h2>
+                <p class="reveal" style="max-width: 500px; margin: 0 auto 3rem;">Dari hari bahagia pernikahan hingga
+                    momen kelulusan yang membanggakan</p>
+            </div>
 
-                <!-- Prewedding -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-camera-retro"></i></div>
-                    <h3 class="service-title">Prewedding</h3>
-                    <p>Ceritakan kisah cinta Anda sebelum menuju pelaminan dengan sesi outdoor yang kreatif dan
-                        romantis.</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <div class="service-card reveal delay-1">
+                    <div class="service-icon"><i class="fa-solid fa-heart"></i></div>
+                    <h3>Wedding</h3>
+                    <p>Dokumentasi pernikahan penuh emosi dan keindahan</p>
                 </div>
-
-                <!-- Graduation -->
-                <div class="service-card">
+                <div class="service-card reveal delay-2">
                     <div class="service-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <h3 class="service-title">Wisuda</h3>
-                    <p>Rayakan pencapaian Anda dengan potret profesional yang menonjolkan kesuksesan Anda.</p>
+                    <h3>Graduation</h3>
+                    <p>Potret wisuda profesional yang berkesan</p>
                 </div>
-
-                <!-- Birthday -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-cake-candles"></i></div>
-                    <h3 class="service-title">Ulang Tahun</h3>
-                    <p>Dokumentasi seru dan penuh warna untuk momen spesial dan pesta Anda.</p>
-                </div>
-
-                <!-- Event -->
-                <div class="service-card">
+                <div class="service-card reveal delay-3">
                     <div class="service-icon"><i class="fa-solid fa-calendar-days"></i></div>
-                    <h3 class="service-title">Event</h3>
-                    <p>Liputan profesional untuk acara perusahaan, seminar, atau gathering keluarga besar.</p>
+                    <h3>Event</h3>
+                    <p>Liputan acara dengan hasil berkualitas tinggi</p>
                 </div>
-
-                <!-- Family -->
-                <div class="service-card">
+                <div class="service-card reveal delay-4">
                     <div class="service-icon"><i class="fa-solid fa-people-group"></i></div>
-                    <h3 class="service-title">Family</h3>
-                    <p>Abadikan kebersamaan keluarga dalam potret hangat yang penuh cinta.</p>
+                    <h3>Family</h3>
+                    <p>Potret hangat kebersamaan keluarga</p>
                 </div>
             </div>
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="pricelist.html" class="btn">Lihat Paket & Harga</a>
+
+            <div class="text-center reveal" style="margin-top: 3rem;">
+                <a href="services.html" class="btn btn-outline magnetic">
+                    Lihat Semua Layanan <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- About/Vibe Section -->
-    <section style="padding: 6rem 0; background-color: var(--bg-secondary);">
+    <!-- Stats Section -->
+    <section style="padding: 80px 0; background: linear-gradient(135deg, var(--charcoal) 0%, #3a3a3a 100%);">
         <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
-                <div class="hidden-section">
-                    <h2 style="margin-bottom: 2rem;">Sentuhan Nineties</h2>
-                    <p style="margin-bottom: 1rem; color: var(--text-secondary);">
-                        Kami percaya fotografi lebih dari sekadar menekan tombol rana—ini tentang membekukan perasaan.
-                        Gaya
-                        kami memadukan estetika modern yang disesuaikan dengan sentuhan kehangatan nostalgia.
-                    </p>
-                    <p style="margin-bottom: 2rem; color: var(--text-secondary);">
-                        Dengan peralatan profesional dan tim yang berpengalaman, kami siap mengabadikan setiap momen
-                        berharga Anda dengan kualitas terbaik.
-                    </p>
-                    <a href="gallery.html" class="btn">Lihat Portofolio</a>
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; text-align: center;">
+                <div class="reveal">
+                    <h3 class="stat-number" data-count="500"
+                        style="font-size: 4rem; color: var(--gold); margin-bottom: 0.5rem;">0+</h3>
+                    <p style="color: var(--cream); margin: 0;">Project Selesai</p>
                 </div>
-                <div class="hidden-section">
-                    <img src="images/prewedding.png" alt="Prewedding Photography">
+                <div class="reveal delay-1">
+                    <h3 class="stat-number" data-count="100"
+                        style="font-size: 4rem; color: var(--gold); margin-bottom: 0.5rem;">0+</h3>
+                    <p style="color: var(--cream); margin: 0;">Happy Clients</p>
+                </div>
+                <div class="reveal delay-2">
+                    <h3 class="stat-number" data-count="5"
+                        style="font-size: 4rem; color: var(--gold); margin-bottom: 0.5rem;">0+</h3>
+                    <p style="color: var(--cream); margin: 0;">Years Experience</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Quick Stats Section -->
-    <section>
+    <!-- Featured Work Preview -->
+    <section style="padding: var(--section-padding); background: var(--cream);">
         <div class="container">
-            <div class="glass-card hidden-section" style="text-align: center; padding: 3rem;">
-                <h2 style="margin-bottom: 3rem;">Mengapa Memilih Kami?</h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem;">
-                    <div>
-                        <div style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;">
-                            <i class="fa-solid fa-camera"></i>
-                        </div>
-                        <h3 style="font-size: 2rem; margin-bottom: 0.5rem;">500+</h3>
-                        <p style="color: var(--text-secondary);">Sesi Foto</p>
-                    </div>
-                    <div>
-                        <div style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;">
-                            <i class="fa-solid fa-heart"></i>
-                        </div>
-                        <h3 style="font-size: 2rem; margin-bottom: 0.5rem;">100+</h3>
-                        <p style="color: var(--text-secondary);">Klien Puas</p>
-                    </div>
-                    <div>
-                        <div style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;">
-                            <i class="fa-solid fa-award"></i>
-                        </div>
-                        <h3 style="font-size: 2rem; margin-bottom: 0.5rem;">5+</h3>
-                        <p style="color: var(--text-secondary);">Tahun Pengalaman</p>
-                    </div>
+            <div class="text-center">
+                <span class="section-label reveal">Portfolio</span>
+                <h2 class="reveal" style="margin-bottom: 3rem;">Selected <em class="gradient-text">Works</em></h2>
+            </div>
+
+            <div class="masonry-grid" style="column-count: 3;">
+                <div class="masonry-item reveal img-reveal" data-category="wedding">
+                    <img src="images/wedding.png" alt="Wedding" loading="lazy">
+                    <div class="masonry-overlay"><span>Wedding</span></div>
                 </div>
+                <div class="masonry-item reveal img-reveal delay-1" data-category="graduation">
+                    <img src="images/graduation.png" alt="Graduation" loading="lazy">
+                    <div class="masonry-overlay"><span>Graduation</span></div>
+                </div>
+                <div class="masonry-item reveal img-reveal delay-2" data-category="wedding">
+                    <img src="images/gallery_wedding_1.png" alt="Wedding" loading="lazy">
+                    <div class="masonry-overlay"><span>Wedding</span></div>
+                </div>
+                <div class="masonry-item reveal img-reveal delay-3" data-category="event">
+                    <img src="images/gallery_event.png" alt="Event" loading="lazy">
+                    <div class="masonry-overlay"><span>Event</span></div>
+                </div>
+            </div>
+
+            <div class="text-center reveal" style="margin-top: 3rem;">
+                <a href="gallery.html" class="btn btn-primary magnetic">
+                    Explore Full Gallery <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section style="background: linear-gradient(180deg, var(--bg-primary), var(--bg-secondary)); padding: 6rem 0;">
-        <div class="container text-center hidden-section">
-            <h3 style="font-size: 2.5rem; margin-bottom: 1rem;">Siap Mengabadikan Momen Anda?</h3>
-            <p style="margin-bottom: 2rem;">Konsultasikan kebutuhan fotografi Anda dengan tim kami</p>
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
-                <a href="https://wa.me/6281296986113" target="_blank" class="btn btn-primary">
+    <section style="padding: 100px 0; background: var(--charcoal); position: relative; overflow: hidden;">
+        <div style="position: absolute; inset: 0; background: url('images/hero.png') center/cover; opacity: 0.1;"></div>
+        <div class="container text-center" style="position: relative; z-index: 2;">
+            <h2 class="reveal" style="color: var(--cream); margin-bottom: 1rem;">Siap Mengabadikan <em
+                    style="color: var(--gold);">Momenmu?</em></h2>
+            <p class="reveal" style="color: rgba(255,255,255,0.7); font-size: 1.2rem; margin-bottom: 2.5rem;">Jangan
+                biarkan momen berharga berlalu begitu saja</p>
+            <div class="reveal" style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <a href="https://wa.me/6281296986113" target="_blank" class="btn btn-gold magnetic">
                     <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
                 </a>
-                <a href="contact.html" class="btn">Isi Form Booking</a>
+                <a href="https://www.instagram.com/nineetiestudio" target="_blank" class="btn btn-outline magnetic"
+                    style="border-color: var(--cream); color: var(--cream);">
+                    <i class="fa-brands fa-instagram"></i> Follow Instagram
+                </a>
             </div>
-            <p style="margin-top: 3rem; letter-spacing: 2px; color: var(--accent);">"High-Resolution Memories with
-                Friendly Prices"</p>
-            <p style="font-weight: 600;">NINEETIESTUDIO</p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <img src="images/logo.png" alt="Nineetiestudio Logo" class="footer-logo">
-            <div class="footer-socials">
-                <a href="https://www.instagram.com/nineetiestudio?igsh=MWZvNjd6eHI0dzQzdg==" target="_blank"
-                    class="social-link"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://wa.me/6281296986113" target="_blank" class="social-link"><i
-                        class="fa-brands fa-whatsapp"></i></a>
-                <a href="mailto:hello@nineetiestudio.com" class="social-link"><i class="fa-regular fa-envelope"></i></a>
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo"
+                        style="color: var(--cream); font-size: 1.8rem; display: block; margin-bottom: 1rem;">Nineetiestudio</a>
+                    <p style="color: rgba(255,255,255,0.6); max-width: 280px;">High-Resolution Memories with Friendly
+                        Prices. Jakarta-based photography studio.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricelist.html">Packages</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Connect</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/nineetiestudio" target="_blank" class="social-link"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/6281296986113" target="_blank" class="social-link"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <a href="mailto:hello@nineetiestudio.com" class="social-link"><i
+                                class="fa-regular fa-envelope"></i></a>
+                    </div>
+                </div>
             </div>
-            <p class="copyright">&copy; 2026 Nineetiestudio. All Rights Reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nineetiestudio. All Rights Reserved. Made with <i class="fa-solid fa-heart"
+                        style="color: var(--gold);"></i></p>
+            </div>
         </div>
     </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/6281296986113" target="_blank" class="whatsapp-float">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img src="" alt="" id="lightbox-img">
+    </div>
 
     <script src="script.js"></script>
 </body>

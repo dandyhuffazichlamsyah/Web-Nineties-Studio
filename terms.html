@@ -4,127 +4,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nineetiestudio Terms - Syarat dan Ketentuan">
     <title>Syarat & Ketentuan | Nineetiestudio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .terms-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-sm);
+            border-left: 4px solid var(--gold);
+            transition: var(--transition-normal);
+        }
+
+        .terms-card:hover {
+            transform: translateX(10px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .terms-card h3 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 1.5rem;
+            color: var(--charcoal);
+        }
+
+        .terms-card h3 i {
+            color: var(--gold);
+            font-size: 1.5rem;
+        }
+
+        .terms-card ul li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .terms-card ul li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: bold;
+        }
+
+        .terms-note {
+            background: linear-gradient(135deg, var(--sage-light), var(--sage));
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            margin-top: 3rem;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Nineetiestudio Logo" class="nav-logo">
-            </a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="menu-bar"></span>
-                <span class="menu-bar"></span>
-                <span class="menu-bar"></span>
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container">
+            <div class="nav-inner glass">
+                <a href="index.html" class="logo"><img src="images/logo.png" alt="Logo"></a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="menu-bar"></span><span class="menu-bar"></span><span class="menu-bar"></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="pricelist.html" class="nav-link">Packages</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="btn btn-primary">Book Now</a></li>
+                </ul>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="nav-link">Beranda</a></li>
-                <li><a href="pricelist.html" class="nav-link">Price List</a></li>
-                <li><a href="gallery.html" class="nav-link">Galeri</a></li>
-                <li><a href="contact.html" class="nav-link">Kontak</a></li>
-            </ul>
         </div>
     </nav>
 
-    <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <div class="header-frame">
-                <h1>Syarat & Ketentuan</h1>
-                <p style="color: var(--text-secondary);">Mohon dibaca sebelum melakukan booking</p>
-            </div>
+            <span class="section-label reveal" style="color: var(--gold);">Important Info</span>
+            <h1 class="reveal">Syarat & <em class="gradient-text">Ketentuan</em></h1>
+            <p class="reveal">Mohon dibaca sebelum melakukan booking</p>
         </div>
     </section>
 
-    <!-- Terms Content -->
-    <section style="padding: 4rem 0;">
+    <section style="padding: var(--section-padding); background: var(--cream);">
         <div class="container" style="max-width: 800px;">
-            <div class="terms-section hidden-section">
-                <h2 style="margin-bottom: 2rem;"><i class="fa-solid fa-file-contract text-accent"></i> Ketentuan Booking
-                </h2>
-                <ul class="terms-list">
-                    <li>Booking baru akan dicatat setelah transfer DP sebesar <strong>Rp 100.000</strong>.</li>
-                    <li>Pelunasan dapat dilakukan <strong>H-2 sebelum acara</strong> atau maksimal <strong>H+1 setelah
-                            acara</strong>.</li>
-                    <li>File tidak akan dikirim sebelum pelunasan selesai.</li>
-                    <li>DP <strong>tidak dapat dikembalikan</strong> jika terjadi pembatalan sepihak dari klien.</li>
+            <div class="terms-card reveal">
+                <h3><i class="fa-solid fa-file-contract"></i> Ketentuan Booking</h3>
+                <ul>
+                    <li>Booking dicatat setelah transfer DP <strong>Rp 100.000</strong></li>
+                    <li>Pelunasan H-2 sebelum acara atau maksimal H+1 setelah acara</li>
+                    <li>File tidak dikirim sebelum pelunasan selesai</li>
+                    <li>DP tidak dapat dikembalikan jika pembatalan sepihak</li>
                 </ul>
             </div>
 
-            <div class="terms-section hidden-section" style="margin-top: 2rem;">
-                <h2 style="margin-bottom: 2rem;"><i class="fa-solid fa-calendar-xmark text-accent"></i> Ketentuan
-                    Reschedule</h2>
-                <ul class="terms-list">
-                    <li>Reschedule maksimal dilakukan <strong>H-3</strong> sebelum acara.</li>
-                    <li>Jika reschedule mendadak (kurang dari H-3), akan dikenakan <strong>charge Rp 100.000</strong>.
-                    </li>
-                    <li>Reschedule hanya dapat dilakukan <strong>1 kali</strong>.</li>
+            <div class="terms-card reveal delay-1">
+                <h3><i class="fa-solid fa-calendar-xmark"></i> Ketentuan Reschedule</h3>
+                <ul>
+                    <li>Reschedule maksimal <strong>H-3</strong> sebelum acara</li>
+                    <li>Jika mendadak (kurang dari H-3), charge <strong>Rp 100.000</strong></li>
+                    <li>Reschedule hanya dapat dilakukan 1 kali</li>
                 </ul>
             </div>
 
-            <div class="terms-section hidden-section" style="margin-top: 2rem;">
-                <h2 style="margin-bottom: 2rem;"><i class="fa-solid fa-image text-accent"></i> Ketentuan Editing</h2>
-                <ul class="terms-list">
-                    <li>Batas waktu pemilihan foto oleh klien adalah <strong>4 hari</strong> setelah raw files dikirim.
-                    </li>
-                    <li>Proses editing selesai maksimal <strong>10 hari kerja</strong> setelah klien memilih foto.</li>
-                    <li>Revisi editing diberikan <strong>2 kali</strong>.</li>
-                    <li>Revisi di luar ketentuan akan dikenakan biaya tambahan.</li>
+            <div class="terms-card reveal delay-2">
+                <h3><i class="fa-solid fa-image"></i> Ketentuan Editing</h3>
+                <ul>
+                    <li>Batas pemilihan foto oleh klien: <strong>4 hari</strong></li>
+                    <li>Editing selesai maksimal <strong>10 hari kerja</strong></li>
+                    <li>Revisi editing diberikan 2 kali</li>
+                    <li>Express 1 hari tersedia dengan biaya tambahan</li>
                 </ul>
             </div>
 
-            <div class="terms-section hidden-section" style="margin-top: 2rem;">
-                <h2 style="margin-bottom: 2rem;"><i class="fa-solid fa-folder-open text-accent"></i> Pengiriman File
-                </h2>
-                <ul class="terms-list">
-                    <li>Semua file mentahan (raw files) akan di-upload <strong>malam hari</strong> setelah sesi atau
-                        maksimal besoknya.</li>
-                    <li>File dikirim melalui <strong>Google Drive</strong>.</li>
-                    <li>Link GDrive aktif selama <strong>1 bulan</strong>. Pastikan download sebelum expired.</li>
-                    <li>Jika membutuhkan akses ulang, hubungi kami dengan biaya administrasi.</li>
+            <div class="terms-card reveal delay-3">
+                <h3><i class="fa-solid fa-folder-open"></i> Pengiriman File</h3>
+                <ul>
+                    <li>Raw files di-upload malam hari setelah sesi atau besoknya</li>
+                    <li>File dikirim via <strong>Google Drive</strong></li>
+                    <li>Link aktif selama <strong>1 bulan</strong></li>
+                    <li>Backup file di server selama 3 bulan</li>
                 </ul>
             </div>
 
-            <div class="terms-note hidden-section" style="margin-top: 3rem;">
-                <h3 style="margin-bottom: 1rem;"><i class="fa-solid fa-circle-info"></i> Catatan Penting</h3>
-                <p>Dengan melakukan booking/DP, klien dianggap telah membaca dan menyetujui semua syarat dan ketentuan
-                    yang berlaku. Untuk pertanyaan lebih lanjut, silakan hubungi kami melalui WhatsApp.</p>
+            <div class="terms-card reveal delay-4">
+                <h3><i class="fa-solid fa-money-bill"></i> Biaya Tambahan</h3>
+                <ul>
+                    <li>Overtime: <strong>Rp 150.000/jam</strong></li>
+                    <li>Transport luar Jakarta: sesuai jarak</li>
+                    <li>Express editing (1 hari): <strong>Rp 100.000</strong></li>
+                    <li>Cetak album: harga sesuai spesifikasi</li>
+                </ul>
             </div>
 
-            <div class="text-center hidden-section" style="margin-top: 3rem;">
-                <a href="https://wa.me/6281296986113?text=Halo%20Nineetiestudio,%20saya%20ada%20pertanyaan%20tentang%20syarat%20dan%20ketentuan"
-                    target="_blank" class="btn btn-primary">
-                    <i class="fa-brands fa-whatsapp"></i> Tanya via WhatsApp
-                </a>
-                <a href="pricelist.html" class="btn" style="margin-left: 1rem;">Kembali ke Price List</a>
+            <div class="terms-note reveal">
+                <p style="margin: 0;"><strong><i class="fa-solid fa-circle-info"></i> Catatan
+                        Penting:</strong><br>Dengan melakukan booking/DP, klien dianggap telah menyetujui semua syarat
+                    dan ketentuan di atas.</p>
+            </div>
+
+            <div class="text-center reveal" style="margin-top: 3rem;">
+                <a href="pricelist.html" class="btn btn-outline magnetic">← Kembali ke Price List</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <img src="images/logo.png" alt="Logo" class="footer-logo">
-            <div class="footer-socials">
-                <a href="https://www.instagram.com/nineetiestudio" target="_blank" class="social-link"><i
-                        class="fa-brands fa-instagram"></i></a>
-                <a href="https://wa.me/6281296986113" target="_blank" class="social-link"><i
-                        class="fa-brands fa-whatsapp"></i></a>
-            </div>
-            <p class="copyright">&copy; 2026 Nineetiestudio. All Rights Reserved.</p>
+    <footer class="footer">
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Nineetiestudio. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <a href="https://wa.me/6281296986113" class="whatsapp-float"><i class="fa-brands fa-whatsapp"></i></a>
     <script src="script.js"></script>
 </body>
 

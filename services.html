@@ -4,256 +4,247 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nineetiestudio Services - Layanan Fotografi Profesional">
-    <title>Layanan | Nineetiestudio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Services | Nineetiestudio</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .service-detail {
+        .service-block {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            gap: 5rem;
             align-items: center;
-            margin-bottom: 5rem;
+            padding: 5rem 0;
         }
 
-        .service-detail:nth-child(even) .service-image {
+        .service-block:nth-child(even) .service-image {
             order: 2;
         }
 
-        .service-detail:nth-child(even) .service-content {
+        .service-block:nth-child(even) .service-content {
             order: 1;
         }
 
+        .service-image {
+            position: relative;
+        }
+
         .service-image img {
-            border-radius: var(--radius-md);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
         }
 
-        .service-features {
-            margin: 1.5rem 0;
+        .service-image::before {
+            content: '';
+            position: absolute;
+            inset: 20px -20px -20px 20px;
+            background: var(--sage-light);
+            border-radius: var(--radius-lg);
+            z-index: -1;
         }
 
-        .service-features li {
-            margin-bottom: 0.8rem;
+        .service-content h2 {
+            margin-bottom: 1rem;
+        }
+
+        .feature-list {
+            margin: 2rem 0;
+        }
+
+        .feature-list li {
             display: flex;
             align-items: center;
-            color: var(--text-secondary);
+            gap: 12px;
+            margin-bottom: 1rem;
+            color: var(--text-muted);
+            font-size: 1.05rem;
         }
 
-        .service-features li i {
-            color: var(--accent);
-            margin-right: 10px;
+        .feature-list i {
+            color: var(--gold);
+            font-size: 1.2rem;
         }
 
         .equipment-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 2rem;
-            margin-top: 2rem;
+            margin-top: 3rem;
         }
 
         .equipment-item {
             text-align: center;
-            padding: 2rem;
-            background: var(--bg-secondary);
-            border-radius: var(--radius-md);
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 2.5rem;
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-normal);
         }
 
-        .equipment-icon {
-            font-size: 2.5rem;
-            color: var(--accent);
+        .equipment-item:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .equipment-item i {
+            font-size: 3rem;
+            color: var(--charcoal);
             margin-bottom: 1rem;
+            display: block;
         }
 
         @media (max-width: 768px) {
-            .service-detail {
+            .service-block {
                 grid-template-columns: 1fr;
+                gap: 2rem;
             }
 
-            .service-detail:nth-child(even) .service-image,
-            .service-detail:nth-child(even) .service-content {
+            .service-block:nth-child(even) .service-image,
+            .service-block:nth-child(even) .service-content {
                 order: unset;
+            }
+
+            .service-image::before {
+                display: none;
             }
         }
     </style>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Nineetiestudio Logo" class="nav-logo">
-            </a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="menu-bar"></span>
-                <span class="menu-bar"></span>
-                <span class="menu-bar"></span>
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container">
+            <div class="nav-inner glass">
+                <a href="index.html" class="logo"><img src="images/logo.png" alt="Logo"></a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="menu-bar"></span><span class="menu-bar"></span><span class="menu-bar"></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link active">Services</a></li>
+                    <li><a href="pricelist.html" class="nav-link">Packages</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="btn btn-primary">Book Now</a></li>
+                </ul>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="nav-link">Beranda</a></li>
-                <li><a href="pricelist.html" class="nav-link">Price List</a></li>
-                <li><a href="gallery.html" class="nav-link">Galeri</a></li>
-                <li><a href="contact.html" class="nav-link">Kontak</a></li>
-            </ul>
         </div>
     </nav>
 
-    <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <div class="header-frame">
-                <h1>Layanan Kami</h1>
-                <p style="color: var(--text-secondary);">Mengabadikan setiap momen penting dalam hidup Anda</p>
-            </div>
+            <span class="section-label reveal" style="color: var(--gold);">What We Do</span>
+            <h1 class="reveal">Layanan <em class="gradient-text">Kami</em></h1>
+            <p class="reveal">Mengabadikan setiap momen penting dalam hidup Anda</p>
         </div>
     </section>
 
-    <!-- Services Detail -->
-    <section style="padding: 4rem 0;">
+    <section style="background: var(--cream);">
         <div class="container">
-            <!-- Wedding -->
-            <div class="service-detail hidden-section">
-                <div class="service-image">
-                    <img src="images/wedding.png" alt="Wedding Photography">
+            <div class="service-block">
+                <div class="service-image reveal reveal-left img-reveal">
+                    <img src="images/wedding.png" alt="Wedding Photography" loading="lazy">
                 </div>
-                <div class="service-content">
+                <div class="service-content reveal reveal-right">
+                    <span class="section-label">01</span>
                     <h2>Wedding Photography</h2>
-                    <p style="color: var(--text-secondary);">Hari pernikahan adalah momen sakral yang penuh emosi. Tim
-                        kami hadir untuk menangkap setiap detail kebahagiaan, dari prosesi akad hingga resepsi meriah.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fa-solid fa-check"></i> Dokumentasi akad & resepsi lengkap</li>
-                        <li><i class="fa-solid fa-check"></i> Gaya candid & cinematic</li>
-                        <li><i class="fa-solid fa-check"></i> Edit profesional dengan color grading</li>
-                        <li><i class="fa-solid fa-check"></i> Semua file mentah (RAW) diberikan</li>
+                    <p>Hari pernikahan adalah momen sakral yang penuh emosi. Tim kami hadir untuk menangkap setiap
+                        detail kebahagiaan dari prosesi akad hingga resepsi meriah.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check-circle"></i> Dokumentasi akad & resepsi lengkap</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Gaya candid & cinematic</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Edit profesional dengan color grading</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Semua file mentah (RAW) diberikan</li>
                     </ul>
-                    <a href="pricelist.html" class="btn">Lihat Paket Wedding</a>
+                    <a href="pricelist.html" class="btn btn-gold magnetic">Lihat Paket Wedding</a>
                 </div>
             </div>
 
-            <!-- Prewedding -->
-            <div class="service-detail hidden-section">
-                <div class="service-image">
-                    <img src="images/prewedding.png" alt="Prewedding Photography">
+            <div class="service-block">
+                <div class="service-image reveal reveal-right img-reveal">
+                    <img src="images/graduation.png" alt="Graduation Photography" loading="lazy">
                 </div>
-                <div class="service-content">
-                    <h2>Prewedding Session</h2>
-                    <p style="color: var(--text-secondary);">Ceritakan kisah cinta Anda sebelum hari besar. Sesi
-                        prewedding outdoor atau indoor dengan konsep kreatif dan romantis.</p>
-                    <ul class="service-features">
-                        <li><i class="fa-solid fa-check"></i> Konsultasi konsep & lokasi</li>
-                        <li><i class="fa-solid fa-check"></i> Gaya natural & artistic</li>
-                        <li><i class="fa-solid fa-check"></i> Editing premium</li>
-                        <li><i class="fa-solid fa-check"></i> Bonus collage frame</li>
-                    </ul>
-                    <a href="pricelist.html" class="btn">Lihat Paket Prewedding</a>
-                </div>
-            </div>
-
-            <!-- Graduation -->
-            <div class="service-detail hidden-section">
-                <div class="service-image">
-                    <img src="images/graduation.png" alt="Graduation Photography">
-                </div>
-                <div class="service-content">
+                <div class="service-content reveal reveal-left">
+                    <span class="section-label">02</span>
                     <h2>Graduation Photography</h2>
-                    <p style="color: var(--text-secondary);">Rayakan pencapaian akademis Anda dengan potret wisuda
-                        profesional. Kami menangkap kebanggaan dan kebahagiaan momen istimewa ini.</p>
-                    <ul class="service-features">
-                        <li><i class="fa-solid fa-check"></i> Sesi foto indoor & outdoor</li>
-                        <li><i class="fa-solid fa-check"></i> Pose toga profesional</li>
-                        <li><i class="fa-solid fa-check"></i> Foto grup keluarga</li>
-                        <li><i class="fa-solid fa-check"></i> Quick turnaround</li>
+                    <p>Rayakan pencapaian akademis Anda dengan potret wisuda profesional. Kami menangkap kebanggaan dan
+                        kebahagiaan momen istimewa ini.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check-circle"></i> Sesi foto indoor & outdoor</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Pose toga profesional</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Foto grup keluarga</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Quick turnaround</li>
                     </ul>
-                    <a href="pricelist.html" class="btn">Lihat Paket Wisuda</a>
+                    <a href="pricelist.html" class="btn btn-gold magnetic">Lihat Paket</a>
                 </div>
             </div>
 
-            <!-- Event -->
-            <div class="service-detail hidden-section">
-                <div class="service-image">
-                    <img src="images/gallery_event.png" alt="Event Photography">
+            <div class="service-block">
+                <div class="service-image reveal reveal-left img-reveal">
+                    <img src="images/gallery_event.png" alt="Event Photography" loading="lazy">
                 </div>
-                <div class="service-content">
+                <div class="service-content reveal reveal-right">
+                    <span class="section-label">03</span>
                     <h2>Event Documentation</h2>
-                    <p style="color: var(--text-secondary);">Liputan profesional untuk acara korporat, seminar,
-                        gathering, atau perayaan spesial lainnya. Hasil berkualitas tinggi untuk kebutuhan publikasi.
-                    </p>
-                    <ul class="service-features">
-                        <li><i class="fa-solid fa-check"></i> Tim terlatih untuk event besar</li>
-                        <li><i class="fa-solid fa-check"></i> Pengiriman cepat</li>
-                        <li><i class="fa-solid fa-check"></i> High-resolution untuk print</li>
-                        <li><i class="fa-solid fa-check"></i> Format siap sosial media</li>
+                    <p>Liputan profesional untuk acara korporat, seminar, gathering, atau perayaan spesial lainnya
+                        dengan tim yang terlatih.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check-circle"></i> Tim terlatih untuk event besar</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Pengiriman cepat</li>
+                        <li><i class="fa-solid fa-check-circle"></i> High-resolution untuk print</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Format siap sosial media</li>
                     </ul>
-                    <a href="pricelist.html" class="btn">Lihat Paket Event</a>
+                    <a href="pricelist.html" class="btn btn-gold magnetic">Lihat Paket</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Equipment Section -->
-    <section style="background: var(--bg-secondary); padding: 4rem 0;">
+    <section style="padding: var(--section-padding); background: var(--sage-light);">
         <div class="container text-center">
-            <h2 style="margin-bottom: 1rem;">Peralatan Profesional</h2>
-            <p style="color: var(--text-secondary); margin-bottom: 2rem;">Kami menggunakan peralatan kelas profesional
-                untuk hasil terbaik</p>
-            <div class="equipment-grid hidden-section">
-                <div class="equipment-item">
-                    <div class="equipment-icon"><i class="fa-solid fa-camera"></i></div>
+            <span class="section-label reveal" style="color: var(--charcoal);">Professional Gear</span>
+            <h2 class="reveal" style="margin-bottom: 1rem;">Peralatan Terbaik</h2>
+            <p class="reveal" style="max-width: 500px; margin: 0 auto;">Kami menggunakan peralatan profesional untuk
+                hasil maksimal</p>
+            <div class="equipment-grid">
+                <div class="equipment-item reveal"><i class="fa-solid fa-camera"></i>
                     <h4>Full-Frame Camera</h4>
-                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Sony A7 Series</p>
+                    <p style="color: var(--text-muted);">Sony A7 Series</p>
                 </div>
-                <div class="equipment-item">
-                    <div class="equipment-icon"><i class="fa-solid fa-circle-dot"></i></div>
+                <div class="equipment-item reveal delay-1"><i class="fa-solid fa-circle-dot"></i>
                     <h4>Premium Lenses</h4>
-                    <p style="font-size: 0.9rem; color: var(--text-secondary);">24-70mm, 85mm</p>
+                    <p style="color: var(--text-muted);">24-70mm, 85mm</p>
                 </div>
-                <div class="equipment-item">
-                    <div class="equipment-icon"><i class="fa-solid fa-bolt"></i></div>
+                <div class="equipment-item reveal delay-2"><i class="fa-solid fa-bolt"></i>
                     <h4>Pro Lighting</h4>
-                    <p style="font-size: 0.9rem; color: var(--text-secondary);">Godox Flash System</p>
+                    <p style="color: var(--text-muted);">Godox Flash</p>
                 </div>
-                <div class="equipment-item">
-                    <div class="equipment-icon"><i class="fa-solid fa-drone"></i></div>
+                <div class="equipment-item reveal delay-3"><i class="fa-solid fa-helicopter"></i>
                     <h4>Drone Aerial</h4>
-                    <p style="font-size: 0.9rem; color: var(--text-secondary);">DJI Mini Series</p>
+                    <p style="color: var(--text-muted);">DJI Mini</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section style="padding: 4rem 0;">
-        <div class="container text-center hidden-section">
-            <h2>Butuh Paket Custom?</h2>
-            <p style="color: var(--text-secondary); margin-bottom: 2rem;">Kami siap menyesuaikan paket sesuai kebutuhan
-                acara Anda</p>
-            <a href="contact.html" class="btn btn-primary">Hubungi Kami</a>
+    <section style="padding: 80px 0; background: var(--charcoal);">
+        <div class="container text-center">
+            <h2 class="reveal" style="color: var(--cream);">Butuh Paket <em style="color: var(--gold);">Custom?</em>
+            </h2>
+            <p class="reveal" style="color: rgba(255,255,255,0.7); margin-bottom: 2rem;">Kami siap menyesuaikan paket
+                sesuai kebutuhan Anda</p>
+            <a href="contact.html" class="btn btn-gold magnetic reveal">Hubungi Kami</a>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <img src="images/logo.png" alt="Logo" class="footer-logo">
-            <div class="footer-socials">
-                <a href="https://www.instagram.com/nineetiestudio" target="_blank" class="social-link"><i
-                        class="fa-brands fa-instagram"></i></a>
-                <a href="https://wa.me/6281296986113" target="_blank" class="social-link"><i
-                        class="fa-brands fa-whatsapp"></i></a>
-            </div>
-            <p class="copyright">&copy; 2026 Nineetiestudio. All Rights Reserved.</p>
+    <footer class="footer">
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Nineetiestudio. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <a href="https://wa.me/6281296986113" class="whatsapp-float"><i class="fa-brands fa-whatsapp"></i></a>
     <script src="script.js"></script>
 </body>
 

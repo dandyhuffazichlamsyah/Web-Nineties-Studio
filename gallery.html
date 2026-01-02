@@ -4,168 +4,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nineetiestudio Gallery - Portfolio Fotografi Profesional">
-    <title>Galeri | Nineetiestudio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Gallery | Nineetiestudio</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 12px 28px;
+            border: 2px solid var(--charcoal);
+            background: transparent;
+            color: var(--charcoal);
+            border-radius: var(--radius-lg);
+            font-family: 'DM Sans';
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition-normal);
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: var(--charcoal);
+            color: var(--cream);
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            margin-bottom: 1.5rem;
+            break-inside: avoid;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            transition: transform 0.5s var(--ease-smooth);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(45, 45, 45, 0.9) 0%, transparent 60%);
+            opacity: 0;
+            transition: var(--transition-normal);
+            display: flex;
+            align-items: flex-end;
+            padding: 1.5rem;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay span {
+            color: var(--cream);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .instagram-cta {
+            background: linear-gradient(135deg, var(--sage-light), var(--sage));
+            padding: 4rem;
+            border-radius: var(--radius-lg);
+            text-align: center;
+            margin-top: 4rem;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Nineetiestudio Logo" class="nav-logo">
-            </a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="menu-bar"></span>
-                <span class="menu-bar"></span>
-                <span class="menu-bar"></span>
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container">
+            <div class="nav-inner glass">
+                <a href="index.html" class="logo"><img src="images/logo.png" alt="Logo"></a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="menu-bar"></span><span class="menu-bar"></span><span class="menu-bar"></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="pricelist.html" class="nav-link">Packages</a></li>
+                    <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                    <li><a href="contact.html" class="btn btn-primary">Book Now</a></li>
+                </ul>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="nav-link">Beranda</a></li>
-                <li><a href="pricelist.html" class="nav-link">Price List</a></li>
-                <li><a href="gallery.html" class="nav-link active">Galeri</a></li>
-                <li><a href="contact.html" class="nav-link">Kontak</a></li>
-            </ul>
         </div>
     </nav>
 
-    <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <div class="header-frame">
-                <h1>Galeri</h1>
-                <p style="color: var(--text-secondary);">Portfolio karya terbaik kami</p>
-            </div>
+            <span class="section-label reveal" style="color: var(--gold);">Our Works</span>
+            <h1 class="reveal">Portfolio <em class="gradient-text">Gallery</em></h1>
+            <p class="reveal">Koleksi momen-momen indah yang telah kami abadikan</p>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section style="padding: 4rem 0;">
+    <section style="padding: var(--section-padding); background: var(--cream);">
         <div class="container">
-            <!-- Category Filter -->
-            <div class="price-tabs" style="margin-bottom: 3rem;">
-                <button class="tab-btn active" onclick="filterGallery('all')">Semua</button>
-                <button class="tab-btn" onclick="filterGallery('wedding')">Wedding</button>
-                <button class="tab-btn" onclick="filterGallery('event')">Event</button>
-                <button class="tab-btn" onclick="filterGallery('graduation')">Wisuda</button>
+            <div class="filter-container reveal">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="wedding">Wedding</button>
+                <button class="filter-btn" data-filter="event">Event</button>
+                <button class="filter-btn" data-filter="graduation">Wisuda</button>
             </div>
 
-            <!-- Gallery Grid -->
-            <div class="gallery-grid" id="gallery-grid">
-                <!-- Wedding -->
-                <div class="gallery-item hidden-section" data-category="wedding">
-                    <img src="images/wedding.png" alt="Wedding Photography">
-                    <div class="gallery-overlay">
-                        <span class="view-btn">Lihat</span>
-                    </div>
+            <div class="masonry-grid" id="gallery-grid">
+                <div class="gallery-item reveal img-reveal" data-category="wedding">
+                    <img src="images/wedding.png" alt="Wedding" loading="lazy">
+                    <div class="gallery-overlay"><span>Wedding</span></div>
                 </div>
-                <div class="gallery-item hidden-section" data-category="wedding">
-                    <img src="images/gallery_wedding_1.png" alt="Wedding Photography">
-                    <div class="gallery-overlay">
-                        <span class="view-btn">Lihat</span>
-                    </div>
+                <div class="gallery-item reveal img-reveal" data-category="wedding">
+                    <img src="images/gallery_wedding_1.png" alt="Wedding" loading="lazy">
+                    <div class="gallery-overlay"><span>Wedding</span></div>
                 </div>
-                <div class="gallery-item hidden-section" data-category="wedding">
-                    <img src="images/gallery_wedding_collage.jpg" alt="Wedding Photography">
-                    <div class="gallery-overlay">
-                        <span class="view-btn">Lihat</span>
-                    </div>
+                <div class="gallery-item reveal img-reveal" data-category="wedding">
+                    <img src="images/prewedding.png" alt="Prewedding" loading="lazy">
+                    <div class="gallery-overlay"><span>Prewedding</span></div>
                 </div>
-                <div class="gallery-item hidden-section" data-category="wedding">
-                    <img src="images/prewedding.png" alt="Prewedding Photography">
-                    <div class="gallery-overlay">
-                        <span class="view-btn">Lihat</span>
-                    </div>
+                <div class="gallery-item reveal img-reveal" data-category="wedding">
+                    <img src="images/gallery_wedding_collage.jpg" alt="Wedding" loading="lazy">
+                    <div class="gallery-overlay"><span>Wedding</span></div>
                 </div>
+                <div class="gallery-item reveal img-reveal" data-category="graduation">
+                    <img src="images/graduation.png" alt="Graduation" loading="lazy">
+                    <div class="gallery-overlay"><span>Graduation</span></div>
+                </div>
+                <div class="gallery-item reveal img-reveal" data-category="graduation">
+                    <img src="images/gallery_art.png" alt="Art Portrait" loading="lazy">
+                    <div class="gallery-overlay"><span>Art Portrait</span></div>
+                </div>
+                <div class="gallery-item reveal img-reveal" data-category="event">
+                    <img src="images/gallery_event.png" alt="Event" loading="lazy">
+                    <div class="gallery-overlay"><span>Event</span></div>
+                </div>
+                <div class="gallery-item reveal img-reveal" data-category="event">
+                    <img src="images/birthday.png" alt="Birthday" loading="lazy">
+                    <div class="gallery-overlay"><span>Birthday</span></div>
+                </div>
+                <div class="gallery-item reveal img-reveal" data-category="event">
+                    <img src="images/gallery_birthday.png" alt="Birthday" loading="lazy">
+                    <div class="gallery-overlay"><span>Birthday</span></div>
+                </div>
+            </div>
 
-                <!-- Event -->
-                <div class="gallery-item hidden-section" data-category="event">
-                    <img src="images/gallery_event.png" alt="Event Photography">
-                    <div class="gallery-overlay">
-                        <span class="view-btn">Lihat</span>
-                    </div>
-                </div>
-                <div class="gallery-item hidden-section" data-category="event">
-                    <img src="images/birthday.png" alt="Birthday Photography">
-                    <div class="gallery-overlay">
-                        <span class="view-btn">Lihat</span>
-                    </div>
-                </div>
-                <div class="gallery-item hidden-section" data-category="event">
-                    <img src="images/gallery_birthday.png" alt="Birthday Photography">
-                    <div class="gallery-overlay">
-                        <span class="view-btn">Lihat</span>
-                    </div>
-                </div>
-
-                <!-- Graduation -->
-                <div class="gallery-item hidden-section" data-category="graduation">
-                    <img src="images/graduation.png" alt="Graduation Photography">
-                    <div class="gallery-overlay">
-                        <span class="view-btn">Lihat</span>
-                    </div>
-                </div>
-                <div class="gallery-item hidden-section" data-category="graduation">
-                    <img src="images/gallery_art.png" alt="Art Photography">
-                    <div class="gallery-overlay">
-                        <span class="view-btn">Lihat</span>
-                    </div>
-                </div>
+            <div class="instagram-cta reveal">
+                <h2 style="margin-bottom: 1rem;">Lihat Lebih Banyak</h2>
+                <p style="margin-bottom: 1.5rem;">Follow @nineetiestudio untuk update portfolio terbaru</p>
+                <a href="https://www.instagram.com/nineetiestudio" target="_blank" class="btn btn-primary magnetic">
+                    <i class="fa-brands fa-instagram"></i> Follow Instagram
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Instagram CTA -->
-    <section style="background: var(--bg-secondary); padding: 4rem 0;">
-        <div class="container text-center hidden-section">
-            <h2 style="margin-bottom: 1rem;">Lihat Lebih Banyak di Instagram</h2>
-            <p style="margin-bottom: 2rem; color: var(--text-secondary);">Follow @nineetiestudio untuk update portfolio
-                terbaru</p>
-            <a href="https://www.instagram.com/nineetiestudio" target="_blank" class="btn btn-primary">
-                <i class="fa-brands fa-instagram"></i> Follow Instagram
-            </a>
-        </div>
-    </section>
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img src="" alt="" id="lightbox-img">
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <img src="images/logo.png" alt="Logo" class="footer-logo">
-            <div class="footer-socials">
-                <a href="https://www.instagram.com/nineetiestudio" target="_blank" class="social-link"><i
-                        class="fa-brands fa-instagram"></i></a>
-                <a href="https://wa.me/6281296986113" target="_blank" class="social-link"><i
-                        class="fa-brands fa-whatsapp"></i></a>
-            </div>
-            <p class="copyright">&copy; 2026 Nineetiestudio. All Rights Reserved.</p>
+    <footer class="footer">
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Nineetiestudio. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <a href="https://wa.me/6281296986113" class="whatsapp-float"><i class="fa-brands fa-whatsapp"></i></a>
     <script src="script.js"></script>
-    <script>
-        function filterGallery(category) {
-            const items = document.querySelectorAll('.gallery-item');
-            const tabs = document.querySelectorAll('.tab-btn');
-
-            tabs.forEach(t => t.classList.remove('active'));
-            event.target.classList.add('active');
-
-            items.forEach(item => {
-                if (category === 'all' || item.dataset.category === category) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        }
-    </script>
 </body>
 
 </html>

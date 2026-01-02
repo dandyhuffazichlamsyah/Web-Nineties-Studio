@@ -4,12 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nineetiestudio Contact - Hubungi kami untuk booking fotografi profesional">
-    <title>Kontak | Nineetiestudio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Contact | Nineetiestudio</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -18,7 +15,6 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
-            align-items: start;
         }
 
         .form-group {
@@ -28,56 +24,79 @@
         .form-label {
             display: block;
             margin-bottom: 0.5rem;
-            color: var(--accent);
-            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--charcoal);
         }
 
         .form-input {
             width: 100%;
-            padding: 12px 16px;
-            background: var(--bg-secondary);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: var(--radius-sm);
-            color: var(--text-primary);
-            font-family: 'Outfit', sans-serif;
+            padding: 16px 20px;
+            background: var(--white);
+            border: 2px solid var(--cream-dark);
+            border-radius: var(--radius-md);
+            font-family: 'DM Sans';
             font-size: 1rem;
-            transition: border-color 0.3s;
+            color: var(--charcoal);
+            transition: var(--transition-normal);
         }
 
         .form-input:focus {
             outline: none;
-            border-color: var(--accent);
+            border-color: var(--gold);
+            box-shadow: 0 0 0 4px rgba(201, 168, 108, 0.1);
         }
 
         textarea.form-input {
-            min-height: 120px;
+            min-height: 140px;
             resize: vertical;
         }
 
-        .contact-info-card {
-            background: var(--bg-secondary);
-            padding: 2rem;
-            border-radius: var(--radius-md);
-            border: 1px solid rgba(255, 255, 255, 0.05);
+        .contact-info {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
         }
 
         .info-item {
             display: flex;
             align-items: center;
+            gap: 1rem;
             margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--cream-dark);
+        }
+
+        .info-item:last-child {
+            border: none;
+            margin: 0;
+            padding: 0;
         }
 
         .info-icon {
-            width: 50px;
-            height: 50px;
-            background: rgba(201, 168, 108, 0.1);
+            width: 55px;
+            height: 55px;
+            background: linear-gradient(135deg, var(--sage-light), var(--sage));
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-right: 1rem;
-            color: var(--accent);
-            font-size: 1.2rem;
+            color: var(--charcoal);
+            font-size: 1.3rem;
+        }
+
+        .info-item h4 {
+            margin-bottom: 0.25rem;
+            font-size: 1rem;
+        }
+
+        .info-item a {
+            color: var(--gold);
+            transition: var(--transition-fast);
+        }
+
+        .info-item a:hover {
+            color: var(--charcoal);
         }
 
         @media (max-width: 768px) {
@@ -89,125 +108,102 @@
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Nineetiestudio Logo" class="nav-logo">
-            </a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="menu-bar"></span>
-                <span class="menu-bar"></span>
-                <span class="menu-bar"></span>
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container">
+            <div class="nav-inner glass">
+                <a href="index.html" class="logo"><img src="images/logo.png" alt="Logo"></a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="menu-bar"></span><span class="menu-bar"></span><span class="menu-bar"></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="pricelist.html" class="nav-link">Packages</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="contact.html" class="btn btn-primary active">Book Now</a></li>
+                </ul>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="nav-link">Beranda</a></li>
-                <li><a href="pricelist.html" class="nav-link">Price List</a></li>
-                <li><a href="gallery.html" class="nav-link">Galeri</a></li>
-                <li><a href="contact.html" class="nav-link active">Kontak</a></li>
-            </ul>
         </div>
     </nav>
 
-    <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <div class="header-frame">
-                <h1>Kontak</h1>
-                <p style="color: var(--text-secondary);">Mari diskusikan kebutuhan fotografi Anda</p>
-            </div>
+            <span class="section-label reveal" style="color: var(--gold);">Let's Connect</span>
+            <h1 class="reveal">Hubungi <em class="gradient-text">Kami</em></h1>
+            <p class="reveal">Siap mengabadikan momen spesial Anda</p>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section style="padding: 4rem 0;">
+    <section style="padding: var(--section-padding); background: var(--cream);">
         <div class="container">
             <div class="contact-grid">
-                <!-- Booking Form -->
-                <div class="hidden-section">
+                <div class="reveal">
                     <h2 style="margin-bottom: 2rem;">Form Booking</h2>
                     <form id="booking-form">
                         <div class="form-group">
                             <label class="form-label">Nama Lengkap</label>
-                            <input type="text" class="form-input" id="nama" placeholder="Masukkan nama Anda" required>
+                            <input type="text" class="form-input" name="Nama" placeholder="Masukkan nama Anda" required>
                         </div>
                         <div class="form-group">
                             <label class="form-label">Nomor WhatsApp</label>
-                            <input type="tel" class="form-input" id="whatsapp" placeholder="08xx-xxxx-xxxx" required>
+                            <input type="tel" class="form-input" name="WhatsApp" placeholder="08xx-xxxx-xxxx" required>
                         </div>
                         <div class="form-group">
                             <label class="form-label">Jenis Layanan</label>
-                            <select class="form-input" id="layanan" required>
+                            <select class="form-input" name="Layanan" required>
                                 <option value="">Pilih layanan...</option>
                                 <option value="Wedding">Wedding</option>
                                 <option value="Prewedding">Prewedding</option>
                                 <option value="Wisuda">Wisuda</option>
-                                <option value="Ulang Tahun">Ulang Tahun</option>
+                                <option value="Birthday">Birthday</option>
                                 <option value="Event">Event</option>
                                 <option value="Family">Family</option>
-                                <option value="Lainnya">Lainnya</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label class="form-label">Estimasi Tanggal Acara</label>
-                            <input type="date" class="form-input" id="tanggal" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Pilihan Paket</label>
-                            <select class="form-input" id="paket">
-                                <option value="">Pilih paket (opsional)</option>
-                                <option value="Silver 1">Silver 1 (Rp 650k - 1 Jam)</option>
-                                <option value="Silver 2">Silver 2 (Rp 750k - 2 Jam)</option>
-                                <option value="Gold 1">Gold 1 (Rp 850k - 3 Jam)</option>
-                                <option value="Gold 2">Gold 2 (Rp 1.1jt - 4 Jam)</option>
-                                <option value="Gold 3">Gold 3 Foto+Video (Rp 3.5jt)</option>
-                                <option value="Custom">Custom Paket</option>
-                            </select>
+                            <label class="form-label">Tanggal Acara</label>
+                            <input type="date" class="form-input" name="Tanggal" required>
                         </div>
                         <div class="form-group">
                             <label class="form-label">Pesan Tambahan</label>
-                            <textarea class="form-input" id="pesan"
-                                placeholder="Ceritakan detail acara Anda..."></textarea>
+                            <textarea class="form-input" name="Pesan"
+                                placeholder="Detail lokasi, konsep, atau pertanyaan..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <button type="submit" class="btn btn-gold magnetic" style="width: 100%;">
                             <i class="fa-brands fa-whatsapp"></i> Kirim via WhatsApp
                         </button>
                     </form>
                 </div>
 
-                <!-- Contact Info -->
-                <div class="hidden-section">
-                    <div class="contact-info-card">
+                <div class="reveal delay-1">
+                    <div class="contact-info">
                         <h3 style="margin-bottom: 2rem;">Informasi Kontak</h3>
                         <div class="info-item">
                             <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
                             <div>
-                                <p style="font-weight: 500; margin-bottom: 0.2rem;">WhatsApp</p>
-                                <a href="https://wa.me/6281296986113" style="color: var(--text-secondary);">+62
-                                    812-9698-6113</a>
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/6281296986113">+62 812-9698-6113</a>
                             </div>
                         </div>
                         <div class="info-item">
                             <div class="info-icon"><i class="fa-brands fa-instagram"></i></div>
                             <div>
-                                <p style="font-weight: 500; margin-bottom: 0.2rem;">Instagram</p>
-                                <a href="https://www.instagram.com/nineetiestudio"
-                                    style="color: var(--text-secondary);">@nineetiestudio</a>
+                                <h4>Instagram</h4>
+                                <a href="https://www.instagram.com/nineetiestudio">@nineetiestudio</a>
                             </div>
                         </div>
                         <div class="info-item">
                             <div class="info-icon"><i class="fa-regular fa-envelope"></i></div>
                             <div>
-                                <p style="font-weight: 500; margin-bottom: 0.2rem;">Email</p>
-                                <a href="mailto:hello@nineetiestudio.com"
-                                    style="color: var(--text-secondary);">hello@nineetiestudio.com</a>
+                                <h4>Email</h4>
+                                <a href="mailto:hello@nineetiestudio.com">hello@nineetiestudio.com</a>
                             </div>
                         </div>
                         <div class="info-item">
                             <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
                             <div>
-                                <p style="font-weight: 500; margin-bottom: 0.2rem;">Jam Operasional</p>
-                                <p style="color: var(--text-secondary); margin: 0;">Setiap Hari, 09:00 - 21:00 WIB</p>
+                                <h4>Jam Operasional</h4>
+                                <p style="margin: 0; color: var(--text-muted);">Setiap Hari, 09:00 - 21:00 WIB</p>
                             </div>
                         </div>
                     </div>
@@ -216,42 +212,14 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <img src="images/logo.png" alt="Logo" class="footer-logo">
-            <div class="footer-socials">
-                <a href="https://www.instagram.com/nineetiestudio" target="_blank" class="social-link"><i
-                        class="fa-brands fa-instagram"></i></a>
-                <a href="https://wa.me/6281296986113" target="_blank" class="social-link"><i
-                        class="fa-brands fa-whatsapp"></i></a>
-            </div>
-            <p class="copyright">&copy; 2026 Nineetiestudio. All Rights Reserved.</p>
+    <footer class="footer">
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Nineetiestudio. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <a href="https://wa.me/6281296986113" class="whatsapp-float"><i class="fa-brands fa-whatsapp"></i></a>
     <script src="script.js"></script>
-    <script>
-        document.getElementById('booking-form').addEventListener('submit', function (e) {
-            e.preventDefault();
-            const nama = document.getElementById('nama').value;
-            const whatsapp = document.getElementById('whatsapp').value;
-            const layanan = document.getElementById('layanan').value;
-            const tanggal = document.getElementById('tanggal').value;
-            const paket = document.getElementById('paket').value;
-            const pesan = document.getElementById('pesan').value;
-
-            let message = `Halo Nineetiestudio!%0A%0A`;
-            message += `*Nama:* ${nama}%0A`;
-            message += `*WhatsApp:* ${whatsapp}%0A`;
-            message += `*Layanan:* ${layanan}%0A`;
-            message += `*Tanggal:* ${tanggal}%0A`;
-            if (paket) message += `*Paket:* ${paket}%0A`;
-            if (pesan) message += `%0A*Pesan:* ${pesan}`;
-
-            window.open(`https://wa.me/6281296986113?text=${message}`, '_blank');
-        });
-    </script>
 </body>
 
 </html>
