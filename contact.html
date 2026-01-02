@@ -4,85 +4,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontak - Nineetiestudio</title>
+    <meta name="description" content="Nineetiestudio Contact - Hubungi kami untuk booking fotografi profesional">
+    <title>Kontak | Nineetiestudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .page-header {
-            padding: 8rem 0 4rem;
-            text-align: center;
-            background-color: var(--bg-secondary);
-        }
-
-        .contact-container {
-            display: flex;
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             gap: 4rem;
-            margin-top: 4rem;
-        }
-
-        .contact-info {
-            flex: 1;
-        }
-
-        .form-container {
-            flex: 1.5;
-            background: var(--bg-secondary);
-            padding: 2rem;
-            border: 1px solid var(--border);
-        }
-
-        .info-item {
-            margin-bottom: 2rem;
-        }
-
-        .info-item h3 {
-            font-size: 1.2rem;
-            color: var(--accent);
-            margin-bottom: 0.5rem;
+            align-items: start;
         }
 
         .form-group {
             margin-bottom: 1.5rem;
         }
 
-        label {
+        .form-label {
             display: block;
             margin-bottom: 0.5rem;
+            color: var(--accent);
             font-size: 0.9rem;
-            color: var(--text-secondary);
         }
 
-        input,
-        textarea,
-        select {
+        .form-input {
             width: 100%;
-            padding: 1rem;
-            background-color: var(--bg-primary);
-            border: 1px solid var(--border);
+            padding: 12px 16px;
+            background: var(--bg-secondary);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-sm);
             color: var(--text-primary);
-            font-family: var(--font-body);
+            font-family: 'Outfit', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s;
         }
 
-        input:focus,
-        textarea:focus,
-        select:focus {
+        .form-input:focus {
             outline: none;
             border-color: var(--accent);
         }
 
-        @media(max-width: 768px) {
-            .contact-container {
-                flex-direction: column;
+        textarea.form-input {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .contact-info-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(201, 168, 108, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            color: var(--accent);
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 
 <body>
-
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo">
@@ -95,92 +102,156 @@
             </div>
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-link">Beranda</a></li>
-                <li><a href="services.html" class="nav-link">Layanan</a></li>
+                <li><a href="pricelist.html" class="nav-link">Price List</a></li>
                 <li><a href="gallery.html" class="nav-link">Galeri</a></li>
                 <li><a href="contact.html" class="nav-link active">Kontak</a></li>
             </ul>
         </div>
     </nav>
 
-    <header class="page-header">
+    <!-- Page Header -->
+    <section class="page-header">
         <div class="container">
-            <h1>Hubungi Kami</h1>
-            <p style="color: var(--text-secondary);">Mari ciptakan sesuatu yang indah bersama.</p>
+            <div class="header-frame">
+                <h1>Kontak</h1>
+                <p style="color: var(--text-secondary);">Mari diskusikan kebutuhan fotografi Anda</p>
+            </div>
         </div>
-    </header>
+    </section>
 
-    <section>
-        <div class="container hidden-section">
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="info-item">
-                        <h3><i class="fa-regular fa-envelope"></i> Email</h3>
-                        <p>hello@nineetiestudio.com</p>
-                    </div>
-                    <div class="info-item">
-                        <h3><i class="fa-brands fa-whatsapp"></i> WhatsApp</h3>
-                        <p>+62 812-9698-6113</p>
-                    </div>
-                    <div class="info-item">
-                        <h3><i class="fa-solid fa-location-dot"></i> Studio</h3>
-                        <p>Jakarta, Indonesia<br>(By Appointment Only)</p>
-                    </div>
-
-                    <div style="margin-top: 2rem;">
-                        <p style="margin-bottom: 1rem;">Ikuti kami untuk update harian:</p>
-                        <div style="display: flex; gap: 1rem;">
-                            <a href="https://www.instagram.com/nineetiestudio?igsh=MWZvNjd6eHI0dzQzdg==" target="_blank"
-                                class="social-link"><i class="fa-brands fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-container">
-                    <form>
+    <!-- Contact Section -->
+    <section style="padding: 4rem 0;">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Booking Form -->
+                <div class="hidden-section">
+                    <h2 style="margin-bottom: 2rem;">Form Booking</h2>
+                    <form id="booking-form">
                         <div class="form-group">
-                            <label>Nama</label>
-                            <input type="text" placeholder="Nama Anda">
+                            <label class="form-label">Nama Lengkap</label>
+                            <input type="text" class="form-input" id="nama" placeholder="Masukkan nama Anda" required>
                         </div>
                         <div class="form-group">
-                            <label>Nomor WhatsApp</label>
-                            <input type="tel" placeholder="08xx-xxxx-xxxx">
+                            <label class="form-label">Nomor WhatsApp</label>
+                            <input type="tel" class="form-input" id="whatsapp" placeholder="08xx-xxxx-xxxx" required>
                         </div>
                         <div class="form-group">
-                            <label>Layanan yang Diminati</label>
-                            <select>
-                                <option>Pernikahan</option>
-                                <option>Prewedding</option>
-                                <option>Wisuda</option>
-                                <option>Ulang Tahun</option>
-                                <option>Tunangan</option>
-                                <option>Lainnya</option>
+                            <label class="form-label">Jenis Layanan</label>
+                            <select class="form-input" id="layanan" required>
+                                <option value="">Pilih layanan...</option>
+                                <option value="Wedding">Wedding</option>
+                                <option value="Prewedding">Prewedding</option>
+                                <option value="Wisuda">Wisuda</option>
+                                <option value="Ulang Tahun">Ulang Tahun</option>
+                                <option value="Event">Event</option>
+                                <option value="Family">Family</option>
+                                <option value="Lainnya">Lainnya</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Pesan</label>
-                            <textarea rows="5" placeholder="Ceritakan tentang acara Anda..."></textarea>
+                            <label class="form-label">Estimasi Tanggal Acara</label>
+                            <input type="date" class="form-input" id="tanggal" required>
                         </div>
-                        <button type="button" class="btn btn-primary" style="width: 100%;"
-                            onclick="window.open('https://wa.me/6281296986113', '_blank')">Kirim via WhatsApp</button>
+                        <div class="form-group">
+                            <label class="form-label">Pilihan Paket</label>
+                            <select class="form-input" id="paket">
+                                <option value="">Pilih paket (opsional)</option>
+                                <option value="Silver 1">Silver 1 (Rp 650k - 1 Jam)</option>
+                                <option value="Silver 2">Silver 2 (Rp 750k - 2 Jam)</option>
+                                <option value="Gold 1">Gold 1 (Rp 850k - 3 Jam)</option>
+                                <option value="Gold 2">Gold 2 (Rp 1.1jt - 4 Jam)</option>
+                                <option value="Gold 3">Gold 3 Foto+Video (Rp 3.5jt)</option>
+                                <option value="Custom">Custom Paket</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Pesan Tambahan</label>
+                            <textarea class="form-input" id="pesan"
+                                placeholder="Ceritakan detail acara Anda..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fa-brands fa-whatsapp"></i> Kirim via WhatsApp
+                        </button>
                     </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="hidden-section">
+                    <div class="contact-info-card">
+                        <h3 style="margin-bottom: 2rem;">Informasi Kontak</h3>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div>
+                                <p style="font-weight: 500; margin-bottom: 0.2rem;">WhatsApp</p>
+                                <a href="https://wa.me/6281296986113" style="color: var(--text-secondary);">+62
+                                    812-9698-6113</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-brands fa-instagram"></i></div>
+                            <div>
+                                <p style="font-weight: 500; margin-bottom: 0.2rem;">Instagram</p>
+                                <a href="https://www.instagram.com/nineetiestudio"
+                                    style="color: var(--text-secondary);">@nineetiestudio</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-regular fa-envelope"></i></div>
+                            <div>
+                                <p style="font-weight: 500; margin-bottom: 0.2rem;">Email</p>
+                                <a href="mailto:hello@nineetiestudio.com"
+                                    style="color: var(--text-secondary);">hello@nineetiestudio.com</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+                            <div>
+                                <p style="font-weight: 500; margin-bottom: 0.2rem;">Jam Operasional</p>
+                                <p style="color: var(--text-secondary); margin: 0;">Setiap Hari, 09:00 - 21:00 WIB</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <img src="images/logo.png" alt="Nineetiestudio Logo" class="footer-logo">
+            <img src="images/logo.png" alt="Logo" class="footer-logo">
             <div class="footer-socials">
-                <a href="https://www.instagram.com/nineetiestudio?igsh=MWZvNjd6eHI0dzQzdg==" target="_blank"
-                    class="social-link"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#" class="social-link"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.instagram.com/nineetiestudio" target="_blank" class="social-link"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/6281296986113" target="_blank" class="social-link"><i
+                        class="fa-brands fa-whatsapp"></i></a>
             </div>
-            <p class="copyright">&copy; 2024 Nineetiestudio. All Rights Reserved.</p>
+            <p class="copyright">&copy; 2026 Nineetiestudio. All Rights Reserved.</p>
         </div>
     </footer>
+
     <script src="script.js"></script>
+    <script>
+        document.getElementById('booking-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const nama = document.getElementById('nama').value;
+            const whatsapp = document.getElementById('whatsapp').value;
+            const layanan = document.getElementById('layanan').value;
+            const tanggal = document.getElementById('tanggal').value;
+            const paket = document.getElementById('paket').value;
+            const pesan = document.getElementById('pesan').value;
+
+            let message = `Halo Nineetiestudio!%0A%0A`;
+            message += `*Nama:* ${nama}%0A`;
+            message += `*WhatsApp:* ${whatsapp}%0A`;
+            message += `*Layanan:* ${layanan}%0A`;
+            message += `*Tanggal:* ${tanggal}%0A`;
+            if (paket) message += `*Paket:* ${paket}%0A`;
+            if (pesan) message += `%0A*Pesan:* ${pesan}`;
+
+            window.open(`https://wa.me/6281296986113?text=${message}`, '_blank');
+        });
+    </script>
 </body>
 
 </html>

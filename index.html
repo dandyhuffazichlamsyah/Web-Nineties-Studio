@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
         rel="stylesheet">
 
     <!-- Styles -->
@@ -37,7 +37,7 @@
             </div>
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-link active">Beranda</a></li>
-                <li><a href="services.html" class="nav-link">Layanan</a></li>
+                <li><a href="pricelist.html" class="nav-link">Price List</a></li>
                 <li><a href="gallery.html" class="nav-link">Galeri</a></li>
                 <li><a href="contact.html" class="nav-link">Kontak</a></li>
             </ul>
@@ -45,80 +45,143 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero"
-        style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('images/hero.png');">
+    <header class="hero" style="background-image: url('images/hero.png');">
         <div class="container hero-content">
             <p class="hero-tagline">High-Resolution Memories with Friendly Prices</p>
             <h1 class="hero-title">Capture Every Detail</h1>
             <p class="hero-desc">Dari hari istimewa Anda hingga senyum sehari-hari. Kami mengubah momen Anda menjadi
                 kisah sinematik yang abadi.</p>
-            <a href="contact.html" class="btn btn-primary">Pesan Sesi</a>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="pricelist.html" class="btn btn-primary">Lihat Harga</a>
+                <a href="contact.html" class="btn">Hubungi Kami</a>
+            </div>
         </div>
     </header>
 
     <!-- Services Section -->
     <section class="services">
         <div class="container">
-            <h2 class="section-title">Layanan Kami</h2>
+            <h2 class="section-title text-center">Layanan Kami</h2>
             <div class="services-grid hidden-section">
                 <!-- Wedding -->
                 <div class="service-card">
                     <div class="service-icon"><i class="fa-solid fa-rings-wedding"></i></div>
                     <h3 class="service-title">Pernikahan</h3>
-                    <p class="service-desc">Mengabadikan keajaiban hari besar Anda dengan keanggunan sinematik dan emosi
-                        yang tulus.</p>
+                    <p>Mengabadikan keajaiban hari besar Anda dengan keanggunan sinematik dan emosi yang tulus.</p>
                 </div>
 
                 <!-- Prewedding -->
                 <div class="service-card">
                     <div class="service-icon"><i class="fa-solid fa-camera-retro"></i></div>
                     <h3 class="service-title">Prewedding</h3>
-                    <p class="service-desc">Ceritakan kisah cinta Anda sebelum menuju pelaminan dengan sesi outdoor yang
-                        kreatif dan romantis.</p>
+                    <p>Ceritakan kisah cinta Anda sebelum menuju pelaminan dengan sesi outdoor yang kreatif dan
+                        romantis.</p>
                 </div>
 
                 <!-- Graduation -->
                 <div class="service-card">
                     <div class="service-icon"><i class="fa-solid fa-graduation-cap"></i></div>
                     <h3 class="service-title">Wisuda</h3>
-                    <p class="service-desc">Rayakan pencapaian Anda dengan potret profesional yang menonjolkan
-                        kesuksesan Anda.</p>
+                    <p>Rayakan pencapaian Anda dengan potret profesional yang menonjolkan kesuksesan Anda.</p>
                 </div>
 
                 <!-- Birthday -->
                 <div class="service-card">
                     <div class="service-icon"><i class="fa-solid fa-cake-candles"></i></div>
                     <h3 class="service-title">Ulang Tahun</h3>
-                    <p class="service-desc">Dokumentasi seru dan penuh warna untuk momen spesial dan pesta Anda.</p>
+                    <p>Dokumentasi seru dan penuh warna untuk momen spesial dan pesta Anda.</p>
                 </div>
 
-                <!-- Engagement -->
+                <!-- Event -->
                 <div class="service-card">
-                    <div class="service-icon"><i class="fa-regular fa-heart"></i></div>
-                    <h3 class="service-title">Tunangan</h3>
-                    <p class="service-desc">Sesi intim untuk menandai awal perjalanan Anda bersama.</p>
+                    <div class="service-icon"><i class="fa-solid fa-calendar-days"></i></div>
+                    <h3 class="service-title">Event</h3>
+                    <p>Liputan profesional untuk acara perusahaan, seminar, atau gathering keluarga besar.</p>
+                </div>
+
+                <!-- Family -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-people-group"></i></div>
+                    <h3 class="service-title">Family</h3>
+                    <p>Abadikan kebersamaan keluarga dalam potret hangat yang penuh cinta.</p>
                 </div>
             </div>
             <div style="text-align: center; margin-top: 3rem;">
-                <a href="services.html" class="btn">Lihat Semua Layanan</a>
+                <a href="pricelist.html" class="btn">Lihat Paket & Harga</a>
             </div>
         </div>
     </section>
 
     <!-- About/Vibe Section -->
-    <section style="background-color: var(--bg-secondary);">
-        <div class="container" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4rem;">
-            <div style="flex: 1; min-width: 300px;" class="hidden-section">
-                <h2 style="text-align: left; margin-bottom: 1.5rem;">Sentuhan Nineties</h2>
-                <p style="color: var(--text-secondary); margin-bottom: 2rem;">
-                    Kami percaya fotografi lebih dari sekadar menekan tombol rana—ini tentang membekukan perasaan. Gaya
-                    kami memadukan estetika modern yang disesuaikan dengan sentuhan kehangatan nostalgia, memastikan
-                    foto Anda terlihat abadi selama beberapa dekade mendatang.
-                </p>
-                <a href="gallery.html" class="btn">Lihat Portofolio</a>
+    <section style="padding: 6rem 0; background-color: var(--bg-secondary);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div class="hidden-section">
+                    <h2 style="margin-bottom: 2rem;">Sentuhan Nineties</h2>
+                    <p style="margin-bottom: 1rem; color: var(--text-secondary);">
+                        Kami percaya fotografi lebih dari sekadar menekan tombol rana—ini tentang membekukan perasaan.
+                        Gaya
+                        kami memadukan estetika modern yang disesuaikan dengan sentuhan kehangatan nostalgia.
+                    </p>
+                    <p style="margin-bottom: 2rem; color: var(--text-secondary);">
+                        Dengan peralatan profesional dan tim yang berpengalaman, kami siap mengabadikan setiap momen
+                        berharga Anda dengan kualitas terbaik.
+                    </p>
+                    <a href="gallery.html" class="btn">Lihat Portofolio</a>
+                </div>
+                <div class="hidden-section">
+                    <img src="images/prewedding.png" alt="Prewedding Photography">
+                </div>
             </div>
-            <div style="flex: 1; min-width: 300px; height: 400px; background: url('images/prewedding.png') center/cover; border-radius: 4px;"
-                class="hidden-section"></div>
+        </div>
+    </section>
+
+    <!-- Quick Stats Section -->
+    <section>
+        <div class="container">
+            <div class="glass-card hidden-section" style="text-align: center; padding: 3rem;">
+                <h2 style="margin-bottom: 3rem;">Mengapa Memilih Kami?</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem;">
+                    <div>
+                        <div style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                        <h3 style="font-size: 2rem; margin-bottom: 0.5rem;">500+</h3>
+                        <p style="color: var(--text-secondary);">Sesi Foto</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <h3 style="font-size: 2rem; margin-bottom: 0.5rem;">100+</h3>
+                        <p style="color: var(--text-secondary);">Klien Puas</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h3 style="font-size: 2rem; margin-bottom: 0.5rem;">5+</h3>
+                        <p style="color: var(--text-secondary);">Tahun Pengalaman</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="background: linear-gradient(180deg, var(--bg-primary), var(--bg-secondary)); padding: 6rem 0;">
+        <div class="container text-center hidden-section">
+            <h3 style="font-size: 2.5rem; margin-bottom: 1rem;">Siap Mengabadikan Momen Anda?</h3>
+            <p style="margin-bottom: 2rem;">Konsultasikan kebutuhan fotografi Anda dengan tim kami</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                <a href="https://wa.me/6281296986113" target="_blank" class="btn btn-primary">
+                    <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
+                </a>
+                <a href="contact.html" class="btn">Isi Form Booking</a>
+            </div>
+            <p style="margin-top: 3rem; letter-spacing: 2px; color: var(--accent);">"High-Resolution Memories with
+                Friendly Prices"</p>
+            <p style="font-weight: 600;">NINEETIESTUDIO</p>
         </div>
     </section>
 
@@ -131,9 +194,9 @@
                     class="social-link"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://wa.me/6281296986113" target="_blank" class="social-link"><i
                         class="fa-brands fa-whatsapp"></i></a>
-                <a href="#" class="social-link"><i class="fa-regular fa-envelope"></i></a>
+                <a href="mailto:hello@nineetiestudio.com" class="social-link"><i class="fa-regular fa-envelope"></i></a>
             </div>
-            <p class="copyright">&copy; 2024 Nineetiestudio. All Rights Reserved.</p>
+            <p class="copyright">&copy; 2026 Nineetiestudio. All Rights Reserved.</p>
         </div>
     </footer>
 
