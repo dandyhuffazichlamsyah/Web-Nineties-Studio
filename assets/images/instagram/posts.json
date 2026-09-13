@@ -1,62 +1,110 @@
 [
   {
-    "id": "ig_1",
-    "filename": "ig_1.jpg",
-    "image_path": "assets/images/instagram/ig_1.jpg",
-    "title": "Wisuda Portraiture - Nineetiestudio",
+    "id": 1,
+    "file": "assets/images/instagram/ig_1.jpg",
+    "href": "https://www.instagram.com/nineetiestudio/p/DT6W6N6k_Il/",
     "category": "wisuda",
-    "alt": "Dokumentasi Wisuda Jakarta by Nineetiestudio",
-    "caption": "Momen kelulusan berharga dengan warna natural dan senyum bangga.",
-    "instagram_link": "https://www.instagram.com/nineetiestudio/p/DT6W6N6k_Il/"
+    "tag": "Wisuda",
+    "title": "Wisuda Bahagia & Natural",
+    "desc": "Momen kelulusan penuh senyum dan hangat bersama keluarga terkasih."
   },
   {
-    "id": "ig_2",
-    "filename": "ig_2.jpg",
-    "image_path": "assets/images/instagram/ig_2.jpg",
-    "title": "Wedding Holy Matrimony - Nineetiestudio",
+    "id": 2,
+    "file": "assets/images/instagram/ig_2.jpg",
+    "href": "https://www.instagram.com/nineetiestudio/reel/DT5R0s_kwvc/",
+    "category": "wisuda",
+    "tag": "Reel / Video",
+    "title": "Cinematic Graduation Reel",
+    "desc": "Sorot mata bahagia dan tawa lepas dalam video sinematik wisuda."
+  },
+  {
+    "id": 3,
+    "file": "assets/images/instagram/ig_3.jpg",
+    "href": "https://www.instagram.com/nineetiestudio/p/DT4u2QREwge/",
+    "category": "wisuda",
+    "tag": "Wisuda",
+    "title": "Portrait Studio & Graduation",
+    "desc": "Komposisi bersih dengan tone warna hangat alami yang timeless."
+  },
+  {
+    "id": 4,
+    "file": "assets/images/instagram/ig_4.jpg",
+    "href": "https://www.instagram.com/nineetiestudio/reel/DZFbsWsTrGV/",
     "category": "wedding",
-    "alt": "Dokumentasi Akad & Wedding by Nineetiestudio",
-    "caption": "Ikatan janji suci penuh haru dan keindahan abadi.",
-    "instagram_link": "https://www.instagram.com/nineetiestudio/p/DT4u2QREwge/"
+    "tag": "Wedding",
+    "title": "Wedding Highlights & Ceremony",
+    "desc": "Dokumentasi prosesi sakral pernikahan dengan pencahayaan lembut."
   },
   {
-    "id": "ig_3",
-    "filename": "ig_3.jpg",
-    "image_path": "assets/images/instagram/ig_3.jpg",
-    "title": "Live Stage Event - Nineetiestudio",
-    "category": "event",
-    "alt": "Dokumentasi Acara & Festival Musik",
-    "caption": "Sorotan panggung dan dinamika konser yang tertangkap tajam.",
-    "instagram_link": "https://www.instagram.com/nineetiestudio/p/DZFYCLWE7qz/"
+    "id": 5,
+    "file": "assets/images/instagram/ig_5.jpg",
+    "href": "https://www.instagram.com/nineetiestudio/p/DZFYCLWE7qz/",
+    "category": "wedding",
+    "tag": "Wedding",
+    "title": "Akad Nikah & Intimate Wedding",
+    "desc": "Sentuhan kasih sayang tulus dalam momen sakral pengikatan janji suci."
   },
   {
-    "id": "ig_4",
-    "filename": "ig_4.jpg",
-    "image_path": "assets/images/instagram/ig_4.jpg",
-    "title": "Sweet 17th Birthday - Nineetiestudio",
-    "category": "birthday",
-    "alt": "Perayaan Ulang Tahun & Family Session",
-    "caption": "Keceriaan dan kehangatan tawa bersama keluarga terkasih.",
-    "instagram_link": "https://www.instagram.com/nineetiestudio/p/DZDhqmfE7cn/"
-  },
-  {
-    "id": "ig_5",
-    "filename": "ig_5.jpg",
-    "image_path": "assets/images/instagram/ig_5.jpg",
-    "title": "Editorial Prewedding - Nineetiestudio",
+    "id": 6,
+    "file": "assets/images/instagram/ig_6.jpg",
+    "href": "https://www.instagram.com/nineetiestudio/p/DZDhqmfE7cn/",
     "category": "prewedding",
-    "alt": "Sesi Prewedding Sinematik & Elegan",
-    "caption": "Momen cinta dalam harmoni pencahayaan hangat dan berkelas.",
-    "instagram_link": "https://www.instagram.com/nineetiestudio/p/DZC-wt5Ewi2/"
+    "tag": "Prewedding",
+    "title": "Romantic Prewedding Outdoor",
+    "desc": "Kisah cinta dua insan yang terjalin manis di alam terbuka."
   },
   {
-    "id": "ig_6",
-    "filename": "ig_6.jpg",
-    "image_path": "assets/images/instagram/ig_6.jpg",
-    "title": "Graduation Celebration - Nineetiestudio",
+    "id": 7,
+    "file": "assets/images/instagram/ig_7.jpg",
+    "href": "https://www.instagram.com/nineetiestudio/reel/DZDCQBtzTy4/",
+    "category": "event",
+    "tag": "Engagement",
+    "title": "Engagement & Lamaran Momen",
+    "desc": "Pertemuan hangat dua keluarga besar yang penuh haru dan tawa."
+  },
+  {
+    "id": 8,
+    "file": "assets/images/instagram/ig_8.jpg",
+    "href": "https://www.instagram.com/nineetiestudio/p/DZC-wt5Ewi2/",
+    "category": "prewedding",
+    "tag": "Prewedding",
+    "title": "Tender Family & Couple Warmth",
+    "desc": "Pose santai dan natural yang memancarkan kenyamanan sejati."
+  },
+  {
+    "id": 9,
+    "file": "assets/images/instagram/ig_9.jpg",
+    "href": "https://www.instagram.com/nineetiestudio/p/DT_j0fEk5jZ/",
     "category": "wisuda",
-    "alt": "Foto Wisuda Kampus Jakarta",
-    "caption": "Pencapaian akademik yang diabadikan dengan komposisi estetik.",
-    "instagram_link": "https://www.instagram.com/nineetiestudio/p/DT_j0fEk5jZ/"
+    "tag": "Wisuda",
+    "title": "Wisuda Sahabat & Teman Seperjuangan",
+    "desc": "Kenangan indah bersama kawan-kawan seperjuangan di bangku kuliah."
+  },
+  {
+    "id": 10,
+    "file": "assets/images/instagram/ig_10.jpg",
+    "href": "https://www.instagram.com/nineetiestudio/reel/DT9fz3Ek1Zt/",
+    "category": "wisuda",
+    "tag": "Reel / Video",
+    "title": "Joyful Graduation Moments",
+    "desc": "Ekspresi tawa dan lemparan toga penuh kebanggaan."
+  },
+  {
+    "id": 11,
+    "file": "assets/images/instagram/ig_11.jpg",
+    "href": "https://www.instagram.com/nineetiestudio/p/DT8GBm2E_WE/",
+    "category": "wedding",
+    "tag": "Wedding",
+    "title": "Elegance in Every Detail",
+    "desc": "Detail gaun, riasan, dan nuansa sakral pernikahan bernuansa anggun."
+  },
+  {
+    "id": 12,
+    "file": "assets/images/instagram/ig_12.jpg",
+    "href": "https://www.instagram.com/nineetiestudio/p/DOpnOFak8tO/",
+    "category": "birthday",
+    "tag": "Birthday",
+    "title": "Birthday & Special Celebration",
+    "desc": "Pesta perayaan ulang tahun dan kebersamaan keluarga yang ceria."
   }
 ]
