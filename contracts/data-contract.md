@@ -8,7 +8,7 @@ fallback_domain: "https://nineetiestudio.vercel.app"
 brand_name: "Nineetiestudio"
 tagline: "High-Resolution Memories with Timeless Elegance"
 contact:
-  phone_wa: "6285175200452"
+  phone_wa: "6285174350715"
   instagram: "@nineetiestudio"
   instagram_url: "https://instagram.com/nineetiestudio"
   location: "Jakarta, Indonesia"

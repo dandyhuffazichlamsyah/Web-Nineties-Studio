@@ -42,7 +42,7 @@ All outgoing HTTP responses from `nineetiestudio.biz.id` and `nineetiestudio.ver
 
 ## 3. Client-Side WhatsApp Bridge Contract
 
-- **Endpoint:** `https://wa.me/6285175200452`
+- **Endpoint:** `https://wa.me/6285174350715`
 - **Method:** `GET` with encoded query parameter `text`
 - **Validation Rules:**
   - Phone and name must not be empty.

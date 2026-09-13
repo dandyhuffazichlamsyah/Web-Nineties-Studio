@@ -42,3 +42,26 @@ Clients booking photography packages need an intuitive way to customize duration
 
 ### Decision
 Implement an in-browser deterministic state machine for package selection and pricing calculation with automatic WhatsApp deep-linking, eliminating third-party form dependencies and guaranteeing zero data loss.
+
+---
+
+## ADR-003: WhatsApp Business Update & Full Instagram Profile Data Ingestion
+
+### Status
+Accepted
+
+### Context
+Client requested official business WhatsApp number updated to `085174350715` across all contact points, booking deep links, and structured data, along with a complete scrape and ingestion of all 71 authentic Instagram posts from `@nineetiestudio` with verified captions, category classification, and high-resolution local storage.
+
+### Decision
+1. **WhatsApp Contact Synchronization:**
+   - Updated all deep-link endpoints to `https://wa.me/6285174350715`.
+   - Updated visible contact labels and footer links to `+62 851-7435-0715`.
+   - Updated JSON-LD structured data and contract specifications.
+2. **Complete 71-Post Ingestion:**
+   - Scraped all 71 profile posts from `@nineetiestudio` via browser session.
+   - Preserved 100% authentic captions, dates, and Instagram post permalinks.
+   - Categorized into `prewedding` (44), `event` (14), `wisuda` (7), `wedding` (3), and `birthday` (3).
+   - Stored all 71 images locally in `assets/images/instagram/ig_1.jpg` to `ig_71.jpg` to prevent CDN link expiration.
+3. **Cache Busting Strategy:**
+   - Elevated asset cache busters to `?v=4.0` across all 6 HTML templates.

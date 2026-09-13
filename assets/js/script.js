@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (calcWhatsappBtn) {
             const addonsText = selectedAddonNames.length > 0 ? selectedAddonNames.join(', ') : 'Tanpa Add-on';
             const message = `Halo Nineetiestudio! ✨\n\nSaya ingin konsultasi estimasi paket custom berikut:\n• *Paket Dasar:* ${packageName}\n• *Add-on Pilihan:* ${addonsText}\n• *Estimasi Total:* Rp${grandTotal.toLocaleString('id-ID')}\n\nMohon info ketersediaan jadwal dan booking detail. Terima kasih!`;
-            calcWhatsappBtn.href = `https://wa.me/6285175200452?text=${encodeURIComponent(message)}`;
+            calcWhatsappBtn.href = `https://wa.me/6285174350715?text=${encodeURIComponent(message)}`;
         }
     };
 
@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const message = `Halo Nineetiestudio! ✨\n\nSaya ingin melakukan reservasi sesi dokumentasi dengan rincian berikut:\n\n• *Nama:* ${clientName}\n• *Nomor WhatsApp:* ${clientPhone}\n• *Jenis Acara:* ${eventType}\n• *Tanggal Acara:* ${eventDate}\n• *Lokasi/Venue:* ${eventVenue}\n• *Paket Pilihan:* ${packageName}\n• *Catatan Tambahan:* ${notes}\n\nMohon konfirmasi ketersediaan jadwal pada tanggal tersebut. Terima kasih!`;
 
-            const waUrl = `https://wa.me/6285175200452?text=${encodeURIComponent(message)}`;
+            const waUrl = `https://wa.me/6285174350715?text=${encodeURIComponent(message)}`;
             window.open(waUrl, '_blank', 'noopener,noreferrer');
         });
     }
