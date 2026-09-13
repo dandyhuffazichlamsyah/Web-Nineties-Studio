@@ -1,262 +1,434 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Nineetiestudio - High-Resolution Memories with Friendly Prices. Jasa Fotografi Profesional untuk Wedding, Wisuda, Event & Family.">
-    <title>Nineetiestudio | High-Resolution Memories</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
-        rel="stylesheet">
+    <title>Nineetiestudio | Luxury Photography & Cinematography Jakarta</title>
+    
+    <!-- Canonical & SEO Meta -->
+    <link rel="canonical" href="https://nineetiestudio.biz.id/">
+    <meta name="description" content="Nineetiestudio — High-Resolution Memories with Timeless Elegance. Layanan fotografi & sinematografi profesional untuk Wedding, Wisuda, Event, dan Prewedding di Jakarta.">
+    <meta name="keywords" content="fotografer jakarta, fotografi wisuda, wedding photography jakarta, jasa foto event, nineetiestudio, foto wisuda jakarta">
+    <meta name="author" content="Nineetiestudio">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nineetiestudio.biz.id/">
+    <meta property="og:title" content="Nineetiestudio | Luxury Photography & Cinematography">
+    <meta property="og:description" content="Mengabadikan setiap momen berharga Anda dengan sentuhan sinematik, warna timeless, dan resolusi tinggi.">
+    <meta property="og:image" content="https://nineetiestudio.biz.id/assets/images/hero.png">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://nineetiestudio.biz.id/">
+    <meta name="twitter:title" content="Nineetiestudio | High-Resolution Memories">
+    <meta name="twitter:description" content="Dokumentasi profesional Wedding, Wisuda, Event & Prewedding dengan kualitas premium.">
+    <meta name="twitter:image" content="https://nineetiestudio.biz.id/assets/images/hero.png">
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Nineetiestudio",
+      "image": "https://nineetiestudio.biz.id/assets/images/logo.png",
+      "telephone": "+6285175200452",
+      "url": "https://nineetiestudio.biz.id",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jakarta",
+        "addressRegion": "DKI Jakarta",
+        "addressCountry": "ID"
+      },
+      "priceRange": "Rp650.000 - Rp3.000.000",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "21:00"
+      }
+    }
+    </script>
+
+    <!-- Stylesheets & Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="nav-inner">
-                <a href="index.html" class="logo">
-                    <img src="assets/images/logo.png" alt="Nineetiestudio">
+    <!-- Header Navigation -->
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="container nav-wrapper">
+                <a href="/" class="brand-logo" aria-label="Nineetiestudio Home">
+                    <img src="assets/images/logo.png" alt="Nineetiestudio Logo" width="130" height="42">
                 </a>
-                <div class="menu-toggle" id="mobile-menu">
-                    <span class="menu-bar"></span>
-                    <span class="menu-bar"></span>
-                    <span class="menu-bar"></span>
-                </div>
-                <ul class="nav-links">
+
+                <ul class="nav-menu">
                     <li><a href="index.html" class="nav-link active">Home</a></li>
                     <li><a href="services.html" class="nav-link">Services</a></li>
                     <li><a href="pricelist.html" class="nav-link">Packages</a></li>
-                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-                    <li><a href="contact.html" class="btn btn-primary">Book Now</a></li>
+                    <li><a href="gallery.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="terms.html" class="nav-link">Policies</a></li>
+                    <li><a href="contact.html" class="btn btn-gold btn-sm">Book Session</a></li>
                 </ul>
+
+                <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-bg" style="background-image: url('assets/images/hero.png');"></div>
-        <div class="hero-overlay"></div>
-
-        <!-- Floating Shapes -->
-        <div class="floating-shape shape-1"></div>
-        <div class="floating-shape shape-2"></div>
-        <div class="floating-shape shape-3"></div>
-
-        <div class="container hero-content">
-            <div class="hero-badge reveal">
-                <i class="fa-solid fa-camera"></i>
-                <span>Est. 2021 • Jakarta</span>
-            </div>
-
-            <h1 class="hero-title reveal">
-                High-Resolution<br>
-                <em class="gradient-text">Memories</em>
-            </h1>
-
-            <p class="hero-desc reveal">
-                Mengabadikan momen terbaik Anda dengan sentuhan sinematik yang timeless. Kualitas premium, harga
-                bersahabat.
-            </p>
-
-            <div class="hero-buttons reveal">
-                <a href="pricelist.html" class="btn btn-gold magnetic">
-                    <i class="fa-solid fa-sparkles"></i> Lihat Paket
-                </a>
-                <a href="gallery.html" class="btn btn-outline magnetic">
-                    <i class="fa-solid fa-images"></i> Explore Gallery
-                </a>
-            </div>
-        </div>
+        </nav>
     </header>
 
-    <!-- Services Preview Section -->
-    <section style="padding: var(--section-padding); background: var(--white);">
-        <div class="container">
-            <div class="text-center">
-                <span class="section-label reveal">Layanan Kami</span>
-                <h2 class="reveal" style="margin-bottom: 1rem;">Abadikan Setiap <em class="gradient-text">Momen
-                        Penting</em></h2>
-                <p class="reveal" style="max-width: 500px; margin: 0 auto 3rem;">Dari hari bahagia pernikahan hingga
-                    momen kelulusan yang membanggakan</p>
-            </div>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-bg" style="background-image: url('assets/images/hero.png');"></div>
+            <div class="hero-overlay"></div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
-                <div class="service-card reveal delay-1">
-                    <div class="service-icon"><i class="fa-solid fa-heart"></i></div>
-                    <h3>Wedding</h3>
-                    <p>Dokumentasi pernikahan penuh emosi dan keindahan</p>
-                </div>
-                <div class="service-card reveal delay-2">
-                    <div class="service-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <h3>Graduation</h3>
-                    <p>Potret wisuda profesional yang berkesan</p>
-                </div>
-                <div class="service-card reveal delay-3">
-                    <div class="service-icon"><i class="fa-solid fa-calendar-days"></i></div>
-                    <h3>Event</h3>
-                    <p>Liputan acara dengan hasil berkualitas tinggi</p>
-                </div>
-                <div class="service-card reveal delay-4">
-                    <div class="service-icon"><i class="fa-solid fa-people-group"></i></div>
-                    <h3>Family</h3>
-                    <p>Potret hangat kebersamaan keluarga</p>
-                </div>
-            </div>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="sub-header-pill">
+                        <i class="fa-solid fa-camera-retro"></i>
+                        <span>Est. 2021 • High-Resolution Studio Jakarta</span>
+                    </div>
 
-            <div class="text-center reveal" style="margin-top: 3rem;">
-                <a href="services.html" class="btn btn-outline magnetic">
-                    Lihat Semua Layanan <i class="fa-solid fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-    </section>
+                    <h1 class="serif-font">
+                        Timeless Stories,<br>
+                        <span class="gold-gradient-text">Crafted in High Resolution.</span>
+                    </h1>
 
-    <!-- Stats Section -->
-    <section style="padding: 80px 0; background: linear-gradient(135deg, var(--charcoal) 0%, #3a3a3a 100%);">
-        <div class="container">
-            <div
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; text-align: center;">
-                <div class="reveal">
-                    <h3 class="stat-number" data-count="500"
-                        style="font-size: 4rem; color: var(--gold); margin-bottom: 0.5rem;">0+</h3>
-                    <p style="color: var(--cream); margin: 0;">Project Selesai</p>
-                </div>
-                <div class="reveal delay-1">
-                    <h3 class="stat-number" data-count="100"
-                        style="font-size: 4rem; color: var(--gold); margin-bottom: 0.5rem;">0+</h3>
-                    <p style="color: var(--cream); margin: 0;">Happy Clients</p>
-                </div>
-                <div class="reveal delay-2">
-                    <h3 class="stat-number" data-count="5"
-                        style="font-size: 4rem; color: var(--gold); margin-bottom: 0.5rem;">0+</h3>
-                    <p style="color: var(--cream); margin: 0;">Years Experience</p>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <p class="lead" style="margin: 1.5rem 0 2.2rem;">
+                        Abadikan setiap detik sakral pernikahan, kebanggaan wisuda, dan kemeriahan momen spesial Anda dengan sentuhan sinematik berkelas, palet warna elegan, dan transparansi harga penuh.
+                    </p>
 
-    <!-- Featured Work Preview -->
-    <section style="padding: var(--section-padding); background: var(--cream);">
-        <div class="container">
-            <div class="text-center">
-                <span class="section-label reveal">Portfolio</span>
-                <h2 class="reveal" style="margin-bottom: 3rem;">Selected <em class="gradient-text">Works</em></h2>
-            </div>
+                    <div class="hero-actions">
+                        <a href="pricelist.html" class="btn btn-gold">
+                            <i class="fa-solid fa-sparkles"></i> Lihat Paket 2026
+                        </a>
+                        <a href="gallery.html" class="btn btn-outline">
+                            <i class="fa-regular fa-image"></i> Explore Portfolio
+                        </a>
+                    </div>
 
-            <div class="masonry-grid" style="column-count: 3;">
-                <div class="masonry-item reveal img-reveal" data-category="wedding">
-                    <img src="assets/images/wedding.png" alt="Wedding" loading="lazy">
-                    <div class="masonry-overlay"><span>Wedding</span></div>
+                    <div class="hero-trust">
+                        <div class="trust-item">
+                            <h4>500+</h4>
+                            <p>Proyek Selesai</p>
+                        </div>
+                        <div class="trust-item">
+                            <h4>100%</h4>
+                            <p>Semua Raw Files</p>
+                        </div>
+                        <div class="trust-item">
+                            <h4>4.9 / 5</h4>
+                            <p>Kepuasan Klien</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="masonry-item reveal img-reveal delay-1" data-category="graduation">
-                    <img src="assets/images/graduation.png" alt="Graduation" loading="lazy">
-                    <div class="masonry-overlay"><span>Graduation</span></div>
-                </div>
-                <div class="masonry-item reveal img-reveal delay-2" data-category="wedding">
-                    <img src="assets/images/gallery_wedding_1.png" alt="Wedding" loading="lazy">
-                    <div class="masonry-overlay"><span>Wedding</span></div>
-                </div>
-                <div class="masonry-item reveal img-reveal delay-3" data-category="event">
-                    <img src="assets/images/gallery_event.png" alt="Event" loading="lazy">
-                    <div class="masonry-overlay"><span>Event</span></div>
-                </div>
-            </div>
 
-            <div class="text-center reveal" style="margin-top: 3rem;">
-                <a href="gallery.html" class="btn btn-primary magnetic">
-                    Explore Full Gallery <i class="fa-solid fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section style="padding: 100px 0; background: var(--charcoal); position: relative; overflow: hidden;">
-        <div
-            style="position: absolute; inset: 0; background: url('assets/images/hero.png') center/cover; opacity: 0.1;">
-        </div>
-        <div class="container text-center" style="position: relative; z-index: 2;">
-            <h2 class="reveal" style="color: var(--cream); margin-bottom: 1rem;">Siap Mengabadikan <em
-                    style="color: var(--gold);">Momenmu?</em></h2>
-            <p class="reveal" style="color: rgba(255,255,255,0.7); font-size: 1.2rem; margin-bottom: 2.5rem;">Jangan
-                biarkan momen berharga berlalu begitu saja</p>
-            <div class="reveal" style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-                <a href="https://wa.me/6285175200452" target="_blank" class="btn btn-gold magnetic">
-                    <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
-                </a>
-                <a href="https://www.instagram.com/nineetiestudio" target="_blank" class="btn btn-outline magnetic"
-                    style="border-color: var(--cream); color: var(--cream);">
-                    <i class="fa-brands fa-instagram"></i> Follow Instagram
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <a href="index.html" class="logo"
-                        style="color: var(--cream); font-size: 1.8rem; display: block; margin-bottom: 1rem;">Nineetiestudio</a>
-                    <p style="color: rgba(255,255,255,0.6); max-width: 280px;">High-Resolution Memories with Friendly
-                        Prices. Jakarta-based photography studio.</p>
-                </div>
-                <div>
-                    <h4 class="footer-title">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="pricelist.html">Packages</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="footer-title">Legal</h4>
-                    <ul class="footer-links">
-                        <li><a href="terms.html">Terms & Conditions</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="footer-title">Connect</h4>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/nineetiestudio" target="_blank" class="social-link"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="https://wa.me/6285175200452" target="_blank" class="social-link"><i
-                                class="fa-brands fa-whatsapp"></i></a>
-                        <a href="mailto:hello@nineetiestudio.com" class="social-link"><i
-                                class="fa-regular fa-envelope"></i></a>
+                <div class="hero-visual">
+                    <div class="hero-card-frame">
+                        <img src="assets/images/wedding.png" alt="Editorial Wedding Photography Nineetiestudio" loading="eager">
+                    </div>
+                    <div class="hero-floating-badge">
+                        <div class="badge-icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div>
+                            <h5>Editorial Grading</h5>
+                            <span>Natural Tone & Fine Details</span>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Bento Services Overview -->
+        <section class="section section-darker" id="services-preview">
+            <div class="container">
+                <div class="text-center section-header">
+                    <div class="sub-header-pill">
+                        <i class="fa-solid fa-gem"></i>
+                        <span>Keahlian & Layanan</span>
+                    </div>
+                    <h2>Dokumentasi Presisi untuk Setiap Babak Kehidupan</h2>
+                    <p>Dari upacara pernikahan penuh haru hingga pencapaian akademik berharga, kami hadir mengabadikan detail tanpa cela.</p>
+                </div>
+
+                <div class="bento-grid">
+                    <!-- Wedding -->
+                    <div class="bento-card" style="grid-column: span 6;">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <span class="gallery-tag">Core Signature</span>
+                        <h3 style="margin: 0.5rem 0 1rem;">Wedding & Akad Sumpah</h3>
+                        <p>Dokumentasi sakral pernikahan dengan narasi visual yang hangat, elegan, dan penuh rasa. Meliputi liputan persiapan, prosesi akad, resepsi, hingga momen candid intimate.</p>
+                        <a href="services.html" class="btn btn-outline btn-sm" style="margin-top: 1.5rem;">Pelajari Paket Wedding &rarr;</a>
+                    </div>
+
+                    <!-- Graduation -->
+                    <div class="bento-card" style="grid-column: span 6;">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <span class="gallery-tag">Best Seller</span>
+                        <h3 style="margin: 0.5rem 0 1rem;">Graduation & Wisuda</h3>
+                        <p>Potret wisuda personal, bersama orang tua, dan sahabat dengan komposisi editorial modern. Pengarahan pose luwes, pencahayaan optimal, dan bonus kolase foto eksklusif.</p>
+                        <a href="services.html" class="btn btn-outline btn-sm" style="margin-top: 1.5rem;">Lihat Paket Wisuda &rarr;</a>
+                    </div>
+
+                    <!-- Event & Corporate -->
+                    <div class="bento-card" style="grid-column: span 4;">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-calendar-star"></i>
+                        </div>
+                        <span class="gallery-tag">Corporate & Social</span>
+                        <h4 style="margin: 0.5rem 0 0.8rem;">Event & Gathering</h4>
+                        <p>Liputan lengkap konser, seminar, gathering perusahaan, hingga pesta komunitas dengan standar liputan cepat dan tajam.</p>
+                    </div>
+
+                    <!-- Birthday & Family -->
+                    <div class="bento-card" style="grid-column: span 4;">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-cake-candles"></i>
+                        </div>
+                        <span class="gallery-tag">Intimate Moments</span>
+                        <h4 style="margin: 0.5rem 0 0.8rem;">Birthday & Family</h4>
+                        <p>Perayaan ulang tahun sweet seventeen, kids birthday, serta sesi potret keluarga dengan suasana riang dan alami.</p>
+                    </div>
+
+                    <!-- Prewedding & Studio -->
+                    <div class="bento-card" style="grid-column: span 4;">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                        <span class="gallery-tag">Concept & Cinematic</span>
+                        <h4 style="margin: 0.5rem 0 0.8rem;">Prewedding & Studio</h4>
+                        <p>Sesi konseptual outdoor maupun indoor studio yang dirancang merefleksikan kepribadian otentik Anda berdua.</p>
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top: 3.5rem;">
+                    <a href="services.html" class="btn btn-outline">
+                        Explore Semua Layanan & Portofolio Lengkap <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Works Gallery Preview -->
+        <section class="section" id="featured-works">
+            <div class="container">
+                <div class="text-center section-header">
+                    <div class="sub-header-pill">
+                        <i class="fa-solid fa-camera"></i>
+                        <span>Karya Terkurasi</span>
+                    </div>
+                    <h2>Selected Visual Archives</h2>
+                    <p>Klik karya di bawah ini untuk melihat pratinjau resolusi penuh dalam mode lightbox.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-card" data-category="wedding">
+                        <img src="assets/images/wedding.png" alt="Dokumentasi Wedding Nineetiestudio" loading="lazy">
+                        <div class="gallery-card-overlay">
+                            <span class="gallery-tag">Wedding</span>
+                            <h3 class="gallery-card-title">Ananda & Rizky Akad</h3>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="graduation">
+                        <img src="assets/images/graduation.png" alt="Dokumentasi Wisuda Editorial Nineetiestudio" loading="lazy">
+                        <div class="gallery-card-overlay">
+                            <span class="gallery-tag">Wisuda</span>
+                            <h3 class="gallery-card-title">Saskia Putri, S.Ked</h3>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="wedding">
+                        <img src="assets/images/gallery_wedding_1.png" alt="Wedding Candid Moment" loading="lazy">
+                        <div class="gallery-card-overlay">
+                            <span class="gallery-tag">Wedding</span>
+                            <h3 class="gallery-card-title">The Sacred Vows</h3>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="event">
+                        <img src="assets/images/gallery_event.png" alt="Festival & Event Coverage" loading="lazy">
+                        <div class="gallery-card-overlay">
+                            <span class="gallery-tag">Event</span>
+                            <h3 class="gallery-card-title">Youth Gala Night</h3>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="birthday">
+                        <img src="assets/images/birthday.png" alt="Intimate Birthday Celebration" loading="lazy">
+                        <div class="gallery-card-overlay">
+                            <span class="gallery-tag">Birthday</span>
+                            <h3 class="gallery-card-title">Clara's 17th Jubilee</h3>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-category="prewedding">
+                        <img src="assets/images/prewedding.png" alt="Editorial Prewedding Jakarta" loading="lazy">
+                        <div class="gallery-card-overlay">
+                            <span class="gallery-tag">Prewedding</span>
+                            <h3 class="gallery-card-title">Serenade in Dusk</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top: 3.5rem;">
+                    <a href="gallery.html" class="btn btn-gold">
+                        Buka Galeri Portofolio Lengkap <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Nineetiestudio (Value Proposition) -->
+        <section class="section section-darker" id="value-props">
+            <div class="container">
+                <div class="text-center section-header">
+                    <div class="sub-header-pill">
+                        <i class="fa-solid fa-check-double"></i>
+                        <span>Standar Profesional</span>
+                    </div>
+                    <h2>Komitmen Kualitas Tanpa Kompromi</h2>
+                    <p>Standar layanan studio modern yang dirancang untuk kenyamanan dan kepuasan mutlak Anda.</p>
+                </div>
+
+                <div class="bento-grid">
+                    <div class="bento-card" style="grid-column: span 3;">
+                        <div class="card-icon"><i class="fa-solid fa-hard-drive"></i></div>
+                        <h4>100% Raw Files</h4>
+                        <p>Seluruh file mentahan tanpa kompresi diberikan cuma-cuma melalui cloud storage berkecepatan tinggi.</p>
+                    </div>
+
+                    <div class="bento-card" style="grid-column: span 3;">
+                        <div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <h4>Editorial Color Grading</h4>
+                        <p>Koreksi warna dan retouching presisi yang menonjolkan kealamian kulit dan atmosfer otentik.</p>
+                    </div>
+
+                    <div class="bento-card" style="grid-column: span 3;">
+                        <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <h4>Pengiriman Tepat Waktu</h4>
+                        <p>Preview foto cepat dalam 48 jam dan master drive selesai sesuai jadwal kontrak yang disepakati.</p>
+                    </div>
+
+                    <div class="bento-card" style="grid-column: span 3;">
+                        <div class="card-icon"><i class="fa-solid fa-shield-check"></i></div>
+                        <h4>Harga Terbuka & Transparan</h4>
+                        <p>Tanpa biaya tersembunyi. Seluruh paket dan rincian add-on dapat Anda kalkulasi secara real-time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- High-Impact CTA Banner -->
+        <section class="section" style="background: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.12) 0%, var(--noir-950) 80%);">
+            <div class="container text-center">
+                <div style="max-width: 740px; margin: 0 auto;">
+                    <div class="sub-header-pill">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Reservasi Sekarang</span>
+                    </div>
+                    <h2 class="serif-font" style="margin-bottom: 1.5rem;">
+                        Jadwalkan Sesi Foto Anda Bersama Nineetiestudio
+                    </h2>
+                    <p class="lead" style="margin-bottom: 2.5rem;">
+                        Slot tanggal pada akhir pekan dan musim wisuda terbatas. Amankan tanggal acara Anda sekarang dan konsultasikan konsep visual bersama tim kami.
+                    </p>
+                    <div style="display: flex; justify-content: center; gap: 1.2rem; flex-wrap: wrap;">
+                        <a href="contact.html" class="btn btn-gold">
+                            <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp & Reservasi
+                        </a>
+                        <a href="pricelist.html" class="btn btn-outline">
+                            <i class="fa-solid fa-calculator"></i> Hitung Estimasi Paket
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Fullscreen Lightbox Modal -->
+    <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Image Preview Lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">&times;</button>
+            <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous Image">&#10094;</button>
+            <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next Image">&#10095;</button>
+            <img src="" alt="" class="lightbox-img" id="lightbox-img">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- Luxury Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand-logo">
+                        <img src="assets/images/logo.png" alt="Nineetiestudio" width="130" height="42">
+                    </a>
+                    <p>High-Resolution Memories with Timeless Elegance. Mengabadikan momen hidup Anda menjadi memori visual yang abadi.</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/nineetiestudio" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/6285175200452" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="footer-heading">Navigasi</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Layanan</a></li>
+                        <li><a href="pricelist.html">Daftar Harga</a></li>
+                        <li><a href="gallery.html">Portofolio</a></li>
+                        <li><a href="terms.html">Ketentuan Booking</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="footer-heading">Kategori Sesi</h5>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Wedding & Akad</a></li>
+                        <li><a href="services.html">Wisuda & Kampus</a></li>
+                        <li><a href="services.html">Event & Gathering</a></li>
+                        <li><a href="services.html">Birthday & Party</a></li>
+                        <li><a href="services.html">Prewedding Editorial</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="footer-heading">Kontak & Domain Resmi</h5>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.8rem;"><i class="fa-solid fa-location-dot" style="color: var(--gold-400); margin-right: 0.5rem;"></i> Jakarta & Sekitarnya</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.8rem;"><i class="fa-brands fa-whatsapp" style="color: var(--gold-400); margin-right: 0.5rem;"></i> +62 851-7520-0452</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.8rem;"><i class="fa-solid fa-globe" style="color: var(--gold-400); margin-right: 0.5rem;"></i> nineetiestudio.biz.id</p>
+                </div>
+            </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2026 Nineetiestudio. All Rights Reserved. Made with <i class="fa-solid fa-heart"
-                        style="color: var(--gold);"></i></p>
+                <p>&copy; 2026 Nineetiestudio. All Rights Reserved. Domain Resmi: <a href="https://nineetiestudio.biz.id" style="color: var(--gold-400);">nineetiestudio.biz.id</a></p>
+                <p><a href="terms.html">Kebijakan Privasi & Ketentuan Layanan</a></p>
             </div>
         </div>
     </footer>
 
-    <!-- Floating WhatsApp -->
-    <a href="https://wa.me/6285175200452" target="_blank" class="whatsapp-float">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <!-- Lightbox -->
-    <div class="lightbox" id="lightbox">
-        <span class="lightbox-close">&times;</span>
-        <img src="" alt="" id="lightbox-img">
-    </div>
-
-    <script src="assets/js/script.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/script.js" defer></script>
 </body>
-
 </html>

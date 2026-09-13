@@ -1,255 +1,425 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Price List | Nineetiestudio</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
-        rel="stylesheet">
+    <title>Price List & Packages 2026 | Nineetiestudio Jakarta</title>
+    
+    <!-- Canonical & SEO Meta -->
+    <link rel="canonical" href="https://nineetiestudio.biz.id/pricelist">
+    <meta name="description" content="Daftar harga dan paket fotografi & videografi Nineetiestudio 2026. Harga transparan, raw files included, gratis kolase foto, dan kalkulator harga interaktif.">
+    <meta name="author" content="Nineetiestudio">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nineetiestudio.biz.id/pricelist">
+    <meta property="og:title" content="Price List & Packages 2026 | Nineetiestudio">
+    <meta property="og:description" content="Pilihan paket dokumentasi wisuda, wedding, dan event dengan harga transparan dan kalkulator custom.">
+    <meta property="og:image" content="https://nineetiestudio.biz.id/assets/images/hero.png">
+
+    <!-- Stylesheets & Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .tab-container {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-bottom: 3rem;
-        }
-
-        .tab-btn {
-            padding: 14px 32px;
-            border: 2px solid var(--charcoal);
-            background: transparent;
-            color: var(--charcoal);
-            border-radius: var(--radius-lg);
-            font-family: 'DM Sans';
-            font-weight: 600;
-            cursor: pointer;
-            transition: var(--transition-normal);
-        }
-
-        .tab-btn.active,
-        .tab-btn:hover {
-            background: var(--charcoal);
-            color: var(--cream);
-        }
-
-        .packages-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-        }
-
-        .terms-box {
-            background: var(--sage-light);
-            border-radius: var(--radius-lg);
-            padding: 3rem;
-            margin-top: 4rem;
-        }
-
-        .terms-box ul li {
-            margin-bottom: 0.8rem;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-
-        .terms-box ul li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--charcoal);
-            font-weight: bold;
-        }
-    </style>
 </head>
-
 <body>
-    <!-- Navigation -->
-    <nav class="navbar scrolled" id="navbar">
-        <div class="container">
-            <div class="nav-inner glass">
-                <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="Logo"></a>
-                <div class="menu-toggle" id="mobile-menu">
-                    <span class="menu-bar"></span><span class="menu-bar"></span><span class="menu-bar"></span>
-                </div>
-                <ul class="nav-links">
+
+    <!-- Header Navigation -->
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="container nav-wrapper">
+                <a href="/" class="brand-logo" aria-label="Nineetiestudio Home">
+                    <img src="assets/images/logo.png" alt="Nineetiestudio Logo" width="130" height="42">
+                </a>
+
+                <ul class="nav-menu">
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="services.html" class="nav-link">Services</a></li>
                     <li><a href="pricelist.html" class="nav-link active">Packages</a></li>
-                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-                    <li><a href="contact.html" class="btn btn-primary">Book Now</a></li>
+                    <li><a href="gallery.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="terms.html" class="nav-link">Policies</a></li>
+                    <li><a href="contact.html" class="btn btn-gold btn-sm">Book Session</a></li>
                 </ul>
+
+                <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <span class="section-label reveal" style="color: var(--gold);">Investasi Terbaik</span>
-            <h1 class="reveal">Price List</h1>
-            <p class="reveal">Harga transparan, kualitas premium. Semua raw files included!</p>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section style="padding: var(--section-padding); background: var(--cream);">
-        <div class="container">
-            <div class="tab-container reveal">
-                <button class="tab-btn active" onclick="showTab('foto')">Paket Foto</button>
-                <button class="tab-btn" onclick="showTab('video')">Paket Foto & Video</button>
-            </div>
-
-            <!-- Foto Packages -->
-            <div id="paket-foto" class="packages-grid">
-                <div class="package-card reveal">
-                    <span class="package-badge badge-silver">Silver</span>
-                    <h3>Silver 1</h3>
-                    <p style="color: var(--sage-dark);"><i class="fa-regular fa-clock"></i> 1 Jam</p>
-                    <div class="package-price">650k</div>
-                    <ul class="package-features">
-                        <li><i class="fa-solid fa-check"></i> 1 Photographer + 1 Asisten</li>
-                        <li><i class="fa-solid fa-check"></i> High Resolution Photo (Editing)</li>
-                        <li><i class="fa-solid fa-check"></i> 40 Foto Edit</li>
-                        <li><i class="fa-solid fa-check"></i> Semua File Mentahan (Free)</li>
-                        <li><i class="fa-solid fa-check"></i> Bonus 1 Kolase Foto</li>
-                        <li><i class="fa-solid fa-check"></i> Link Google Drive 1 Bulan</li>
-                    </ul>
-                    <a href="https://wa.me/6285175200452?text=Halo%20Nineetiestudio!%20%F0%9F%93%B8%0A%0ASaya%20tertarik%20dengan%20*Paket%20Silver%201*%0A%E2%80%A2%20Durasi:%201%20Jam%0A%E2%80%A2%20Harga:%20Rp650.000%0A%0A*Detail%20Booking:*%0ANama:%20%0ATanggal%20Acara:%20%0ALokasi:%20%0AJenis%20Acara:%20%0A%0AMohon%20info%20ketersediaan%20jadwal.%20Terima%20kasih!"
-                        class="btn btn-gold magnetic" style="width:100%;">Pilih Paket</a>
+    <main>
+        <!-- Page Hero Banner -->
+        <section class="section" style="padding-top: 150px; padding-bottom: 50px; background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.12) 0%, var(--noir-950) 70%);">
+            <div class="container text-center">
+                <div class="sub-header-pill">
+                    <i class="fa-solid fa-tags"></i>
+                    <span>Katalog Resmi 2026</span>
                 </div>
-
-                <div class="package-card reveal delay-1">
-                    <span class="package-badge badge-silver">Silver</span>
-                    <h3>Silver 2</h3>
-                    <p style="color: var(--sage-dark);"><i class="fa-regular fa-clock"></i> 2 Jam</p>
-                    <div class="package-price">750k</div>
-                    <ul class="package-features">
-                        <li><i class="fa-solid fa-check"></i> 1 Photographer + 1 Asisten</li>
-                        <li><i class="fa-solid fa-check"></i> High Resolution Photo (Editing)</li>
-                        <li><i class="fa-solid fa-check"></i> 50 Foto Edit</li>
-                        <li><i class="fa-solid fa-check"></i> Semua File Mentahan (Free)</li>
-                        <li><i class="fa-solid fa-check"></i> Bonus 1 Kolase Foto</li>
-                        <li><i class="fa-solid fa-check"></i> Link Google Drive 1 Bulan</li>
-                    </ul>
-                    <a href="https://wa.me/6285175200452?text=Halo%20Nineetiestudio!%20%F0%9F%93%B8%0A%0ASaya%20tertarik%20dengan%20*Paket%20Silver%202*%0A%E2%80%A2%20Durasi:%202%20Jam%0A%E2%80%A2%20Harga:%20Rp750.000%0A%0A*Detail%20Booking:*%0ANama:%20%0ATanggal%20Acara:%20%0ALokasi:%20%0AJenis%20Acara:%20%0A%0AMohon%20info%20ketersediaan%20jadwal.%20Terima%20kasih!"
-                        class="btn btn-gold magnetic" style="width:100%;">Pilih Paket</a>
-                </div>
-
-                <div class="package-card reveal delay-2">
-                    <span class="package-badge badge-gold">Gold</span>
-                    <h3>Gold 1</h3>
-                    <p style="color: var(--sage-dark);"><i class="fa-regular fa-clock"></i> 3 Jam</p>
-                    <div class="package-price">850k</div>
-                    <ul class="package-features">
-                        <li><i class="fa-solid fa-check"></i> 1 Photographer + 1 Asisten</li>
-                        <li><i class="fa-solid fa-check"></i> High Resolution Photo (Editing)</li>
-                        <li><i class="fa-solid fa-check"></i> 60 Foto Edit</li>
-                        <li><i class="fa-solid fa-check"></i> Semua File Mentahan (Free)</li>
-                        <li><i class="fa-solid fa-check"></i> Bonus 1 Kolase Foto</li>
-                        <li><i class="fa-solid fa-check"></i> Link Google Drive 1 Bulan</li>
-                    </ul>
-                    <a href="https://wa.me/6285175200452?text=Halo%20Nineetiestudio!%20%F0%9F%93%B8%0A%0ASaya%20tertarik%20dengan%20*Paket%20Gold%201*%0A%E2%80%A2%20Durasi:%203%20Jam%0A%E2%80%A2%20Harga:%20Rp850.000%0A%0A*Detail%20Booking:*%0ANama:%20%0ATanggal%20Acara:%20%0ALokasi:%20%0AJenis%20Acara:%20%0A%0AMohon%20info%20ketersediaan%20jadwal.%20Terima%20kasih!"
-                        class="btn btn-gold magnetic" style="width:100%;">Pilih Paket</a>
-                </div>
-
-                <div class="package-card reveal delay-3">
-                    <span class="package-badge badge-gold">Gold</span>
-                    <h3>Gold 2</h3>
-                    <p style="color: var(--sage-dark);"><i class="fa-regular fa-clock"></i> 4 Jam</p>
-                    <div class="package-price">950k</div>
-                    <ul class="package-features">
-                        <li><i class="fa-solid fa-check"></i> 1 Photographer + 1 Asisten</li>
-                        <li><i class="fa-solid fa-check"></i> High Resolution Photo (Editing)</li>
-                        <li><i class="fa-solid fa-check"></i> 70 Foto Edit</li>
-                        <li><i class="fa-solid fa-check"></i> Semua File Mentahan (Free)</li>
-                        <li><i class="fa-solid fa-check"></i> Bonus 2 Kolase Foto</li>
-                        <li><i class="fa-solid fa-check"></i> Link Google Drive 2 Bulan</li>
-                    </ul>
-                    <a href="https://wa.me/6285175200452?text=Halo%20Nineetiestudio!%20%F0%9F%93%B8%0A%0ASaya%20tertarik%20dengan%20*Paket%20Gold%202*%0A%E2%80%A2%20Durasi:%204%20Jam%0A%E2%80%A2%20Harga:%20Rp950.000%0A%0A*Detail%20Booking:*%0ANama:%20%0ATanggal%20Acara:%20%0ALokasi:%20%0AJenis%20Acara:%20%0A%0AMohon%20info%20ketersediaan%20jadwal.%20Terima%20kasih!"
-                        class="btn btn-gold magnetic" style="width:100%;">Pilih Paket</a>
+                <h1 class="serif-font" style="margin-bottom: 1.2rem;">Paket & Investasi Kenangan</h1>
+                <p class="lead" style="max-width: 680px; margin: 0 auto 2rem;">
+                    Harga transparan, hasil premium. Setiap paket sudah termasuk seluruh file mentahan (RAW), jaminan kualitas editing, dan bonus kolase foto eksklusif.
+                </p>
+                <div>
+                    <a href="docs/Price List @Nineetiestudio 2026.pdf" download class="btn btn-outline btn-sm">
+                        <i class="fa-solid fa-file-pdf"></i> Unduh PDF Price List 2026
+                    </a>
                 </div>
             </div>
+        </section>
 
-            <!-- Foto & Video Packages -->
-            <div id="paket-video" class="packages-grid" style="display: none;">
-                <div class="package-card featured reveal">
-                    <span class="package-badge badge-gold">Best Value</span>
-                    <h3>Gold 3 (Foto + Video)</h3>
-                    <p style="color: var(--sage-dark);"><i class="fa-regular fa-clock"></i> Max 6 Jam</p>
-                    <div class="package-price">3.5jt</div>
-                    <ul class="package-features">
-                        <li><i class="fa-solid fa-check"></i> 1 Photographer + 1 Asisten</li>
-                        <li><i class="fa-solid fa-check"></i> 1 Videografer</li>
-                        <li><i class="fa-solid fa-check"></i> Video Highlight 1-3 Menit</li>
-                        <li><i class="fa-solid fa-check"></i> Teaser Video 30 Detik</li>
-                        <li><i class="fa-solid fa-check"></i> Semua Foto Momen (Free Editing)</li>
-                        <li><i class="fa-solid fa-check"></i> 90 Foto Edit</li>
-                        <li><i class="fa-solid fa-check"></i> Bonus 2 Kolase Foto</li>
-                        <li><i class="fa-solid fa-check"></i> Link Google Drive 3 Bulan</li>
-                    </ul>
-                    <a href="https://wa.me/6285175200452?text=Halo%20Nineetiestudio!%20%F0%9F%8E%AC%F0%9F%93%B8%0A%0ASaya%20tertarik%20dengan%20*Paket%20Gold%203%20(Foto%20%2B%20Video)*%0A%E2%80%A2%20Durasi:%20Max%206%20Jam%0A%E2%80%A2%20Harga:%20Rp3.500.000%0A%0A*Detail%20Booking:*%0ANama:%20%0ATanggal%20Acara:%20%0ALokasi:%20%0AJenis%20Acara:%20%0A%0AMohon%20info%20ketersediaan%20jadwal.%20Terima%20kasih!"
-                        class="btn btn-gold magnetic" style="width:100%;">Pilih Paket</a>
+        <!-- Pricing Packages Section -->
+        <section class="section section-darker">
+            <div class="container">
+                <!-- Tab Controls -->
+                <div class="pricing-tabs">
+                    <button class="pricing-tab-btn active" data-tab="tab-foto">Paket Foto</button>
+                    <button class="pricing-tab-btn" data-tab="tab-combo">Paket Foto & Video</button>
                 </div>
 
-                <div class="package-card reveal delay-1">
-                    <span class="package-badge badge-gold">Popular</span>
-                    <h3>Full Fotografer</h3>
-                    <p style="color: var(--sage-dark);"><i class="fa-regular fa-clock"></i> 5-6 Jam</p>
-                    <div class="package-price">1.45jt</div>
-                    <ul class="package-features">
-                        <li><i class="fa-solid fa-check"></i> 1 Photographer + 1 Asisten</li>
-                        <li><i class="fa-solid fa-check"></i> Semua Foto Momen (Free Editing)</li>
-                        <li><i class="fa-solid fa-check"></i> 80 Foto Edit</li>
-                        <li><i class="fa-solid fa-check"></i> Bonus 2 Kolase Foto</li>
-                        <li><i class="fa-solid fa-check"></i> Link Google Drive 2 Bulan</li>
-                    </ul>
-                    <a href="https://wa.me/6285175200452?text=Halo%20Nineetiestudio!%20%F0%9F%93%B8%0A%0ASaya%20tertarik%20dengan%20*Paket%20Full%20Fotografer*%0A%E2%80%A2%20Durasi:%205-6%20Jam%0A%E2%80%A2%20Harga:%20Rp1.450.000%0A%0A*Detail%20Booking:*%0ANama:%20%0ATanggal%20Acara:%20%0ALokasi:%20%0AJenis%20Acara:%20%0A%0AMohon%20info%20ketersediaan%20jadwal.%20Terima%20kasih!"
-                        class="btn btn-gold magnetic" style="width:100%;">Pilih Paket</a>
+                <!-- Group 1: Paket Foto -->
+                <div class="pricing-grid pricing-group" id="tab-foto">
+                    <!-- Silver 1 -->
+                    <div class="pricing-card">
+                        <div class="package-meta">
+                            <span class="package-badge badge-silver">Silver 1</span>
+                            <span class="package-duration"><i class="fa-regular fa-clock"></i> 1 Jam</span>
+                        </div>
+                        <h3>Paket Silver 1</h3>
+                        <p>Cocok untuk wisuda personal atau potret keluarga singkat.</p>
+                        <div class="package-price-wrap">
+                            <div class="package-price">650k <span>/ sesi</span></div>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="fa-solid fa-check"></i> 1 Photographer + 1 Asisten</li>
+                            <li><i class="fa-solid fa-check"></i> 40 Foto Beresolusi Tinggi (Edit Warna)</li>
+                            <li><i class="fa-solid fa-check"></i> 100% Seluruh File Mentahan (Free RAW)</li>
+                            <li><i class="fa-solid fa-check"></i> Bonus 1 Desain Kolase Foto Estetik</li>
+                            <li><i class="fa-solid fa-check"></i> Akses Cloud Google Drive Selama 1 Bulan</li>
+                        </ul>
+                        <a href="https://wa.me/6285175200452?text=Halo%20Nineetiestudio!%20%E2%9C%A8%0A%0ASaya%20tertarik%20dengan%20*Paket%20Silver%201%20(650k)*.%20Mohon%20info%20ketersediaan%20jadwal.%20Terima%20kasih!" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            Reservasi Paket Ini
+                        </a>
+                    </div>
+
+                    <!-- Silver 2 -->
+                    <div class="pricing-card">
+                        <div class="package-meta">
+                            <span class="package-badge badge-silver">Silver 2</span>
+                            <span class="package-duration"><i class="fa-regular fa-clock"></i> 2 Jam</span>
+                        </div>
+                        <h3>Paket Silver 2</h3>
+                        <p>Waktu lebih leluasa untuk sesi wisuda bersama sahabat & keluarga.</p>
+                        <div class="package-price-wrap">
+                            <div class="package-price">850k <span>/ sesi</span></div>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="fa-solid fa-check"></i> 1 Photographer + 1 Asisten</li>
+                            <li><i class="fa-solid fa-check"></i> 60 Foto Beresolusi Tinggi (Edit Warna)</li>
+                            <li><i class="fa-solid fa-check"></i> 100% Seluruh File Mentahan (Free RAW)</li>
+                            <li><i class="fa-solid fa-check"></i> Bonus 1 Desain Kolase Foto Estetik</li>
+                            <li><i class="fa-solid fa-check"></i> Akses Cloud Google Drive Selama 1 Bulan</li>
+                        </ul>
+                        <a href="https://wa.me/6285175200452?text=Halo%20Nineetiestudio!%20%E2%9C%A8%0A%0ASaya%20tertarik%20dengan%20*Paket%20Silver%202%20(850k)*.%20Mohon%20info%20ketersediaan%20jadwal.%20Terima%20kasih!" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            Reservasi Paket Ini
+                        </a>
+                    </div>
+
+                    <!-- Gold 1 (Recommended) -->
+                    <div class="pricing-card featured">
+                        <div class="package-meta">
+                            <span class="package-badge badge-gold">Gold 1</span>
+                            <span class="package-duration"><i class="fa-regular fa-clock"></i> 3 Jam</span>
+                        </div>
+                        <h3>Paket Gold 1</h3>
+                        <p>Pilihan terfavorit untuk acara lamaran, wisuda grup, atau pesta ulang tahun.</p>
+                        <div class="package-price-wrap">
+                            <div class="package-price">1.250k <span>/ sesi</span></div>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="fa-solid fa-check"></i> 1 Photographer + 1 Asisten</li>
+                            <li><i class="fa-solid fa-check"></i> 80 Foto Beresolusi Tinggi (Edit Warna)</li>
+                            <li><i class="fa-solid fa-check"></i> 100% Seluruh File Mentahan (Free RAW)</li>
+                            <li><i class="fa-solid fa-check"></i> Bonus 2 Desain Kolase Foto Eksklusif</li>
+                            <li><i class="fa-solid fa-check"></i> Akses Cloud Google Drive Selama 1 Bulan</li>
+                        </ul>
+                        <a href="https://wa.me/6285175200452?text=Halo%20Nineetiestudio!%20%E2%9C%A8%0A%0ASaya%20tertarik%20dengan%20*Paket%20Gold%201%20(1.250k)*.%20Mohon%20info%20ketersediaan%20jadwal.%20Terima%20kasih!" target="_blank" rel="noopener noreferrer" class="btn btn-gold">
+                            Pilih Paket Terfavorit
+                        </a>
+                    </div>
+
+                    <!-- Gold 2 -->
+                    <div class="pricing-card">
+                        <div class="package-meta">
+                            <span class="package-badge badge-gold">Gold 2</span>
+                            <span class="package-duration"><i class="fa-regular fa-clock"></i> 4 Jam</span>
+                        </div>
+                        <h3>Paket Gold 2</h3>
+                        <p>Ideal untuk liputan akad nikah intimate atau gathering setengah hari.</p>
+                        <div class="package-price-wrap">
+                            <div class="package-price">1.650k <span>/ sesi</span></div>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="fa-solid fa-check"></i> 1 Photographer + 1 Asisten</li>
+                            <li><i class="fa-solid fa-check"></i> 100 Foto Beresolusi Tinggi (Edit Warna)</li>
+                            <li><i class="fa-solid fa-check"></i> 100% Seluruh File Mentahan (Free RAW)</li>
+                            <li><i class="fa-solid fa-check"></i> Bonus 2 Desain Kolase Foto Eksklusif</li>
+                            <li><i class="fa-solid fa-check"></i> Akses Cloud Google Drive Selama 1 Bulan</li>
+                        </ul>
+                        <a href="https://wa.me/6285175200452?text=Halo%20Nineetiestudio!%20%E2%9C%A8%0A%0ASaya%20tertarik%20dengan%20*Paket%20Gold%202%20(1.650k)*.%20Mohon%20info%20ketersediaan%20jadwal.%20Terima%20kasih!" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            Reservasi Paket Ini
+                        </a>
+                    </div>
+
+                    <!-- Diamond -->
+                    <div class="pricing-card">
+                        <div class="package-meta">
+                            <span class="package-badge badge-diamond">Diamond</span>
+                            <span class="package-duration"><i class="fa-regular fa-clock"></i> 6 Jam</span>
+                        </div>
+                        <h3>Paket Diamond Full</h3>
+                        <p>Liputan lengkap pesta pernikahan atau event akbar tanpa terburu-buru.</p>
+                        <div class="package-price-wrap">
+                            <div class="package-price">2.200k <span>/ sesi</span></div>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="fa-solid fa-check"></i> 2 Photographer Utama + 1 Asisten</li>
+                            <li><i class="fa-solid fa-check"></i> 150+ Foto Beresolusi Tinggi (Master Tone)</li>
+                            <li><i class="fa-solid fa-check"></i> 100% Seluruh File Mentahan (Free RAW)</li>
+                            <li><i class="fa-solid fa-check"></i> Bonus 3 Desain Kolase Foto Eksklusif</li>
+                            <li><i class="fa-solid fa-check"></i> Akses Cloud Google Drive Selama 2 Bulan</li>
+                        </ul>
+                        <a href="https://wa.me/6285175200452?text=Halo%20Nineetiestudio!%20%E2%9C%A8%0A%0ASaya%20tertarik%20dengan%20*Paket%20Diamond%20(2.200k)*.%20Mohon%20info%20ketersediaan%20jadwal.%20Terima%20kasih!" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            Reservasi Paket Ini
+                        </a>
+                    </div>
                 </div>
 
-                <div class="package-card reveal delay-2">
-                    <h3>Full Videografer</h3>
-                    <p style="color: var(--sage-dark);"><i class="fa-regular fa-clock"></i> 5-6 Jam</p>
-                    <div class="package-price">1.65jt</div>
-                    <ul class="package-features">
-                        <li><i class="fa-solid fa-check"></i> 1 Videografer + 1 Asisten</li>
-                        <li><i class="fa-solid fa-check"></i> Video Highlight 1-3 Menit</li>
-                        <li><i class="fa-solid fa-check"></i> Teaser Video 30 Detik</li>
-                        <li><i class="fa-solid fa-check"></i> Link Google Drive 2 Bulan</li>
-                    </ul>
-                    <a href="https://wa.me/6285175200452?text=Halo%20Nineetiestudio!%20%F0%9F%8E%AC%0A%0ASaya%20tertarik%20dengan%20*Paket%20Full%20Videografer*%0A%E2%80%A2%20Durasi:%205-6%20Jam%0A%E2%80%A2%20Harga:%20Rp1.650.000%0A%0A*Detail%20Booking:*%0ANama:%20%0ATanggal%20Acara:%20%0ALokasi:%20%0AJenis%20Acara:%20%0A%0AMohon%20info%20ketersediaan%20jadwal.%20Terima%20kasih!"
-                        class="btn btn-primary magnetic" style="width:100%;">Pilih Paket</a>
+                <!-- Group 2: Paket Foto & Video -->
+                <div class="pricing-grid pricing-group" id="tab-combo" style="display: none;">
+                    <!-- Combo Silver -->
+                    <div class="pricing-card">
+                        <div class="package-meta">
+                            <span class="package-badge badge-silver">Combo Silver</span>
+                            <span class="package-duration"><i class="fa-regular fa-clock"></i> 2 Jam</span>
+                        </div>
+                        <h3>Combo Foto & Video 2 Jam</h3>
+                        <p>Dokumentasi foto dan video teaser singkat yang dinamis untuk media sosial.</p>
+                        <div class="package-price-wrap">
+                            <div class="package-price">1.650k <span>/ sesi</span></div>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="fa-solid fa-check"></i> 1 Photographer + 1 Videographer</li>
+                            <li><i class="fa-solid fa-check"></i> 50 Foto Edit Pilihan Resolusi Tinggi</li>
+                            <li><i class="fa-solid fa-check"></i> 1 Video Cinematic Teaser (1 Menit, Full HD)</li>
+                            <li><i class="fa-solid fa-check"></i> 100% Seluruh File Mentahan Foto & Video</li>
+                            <li><i class="fa-solid fa-check"></i> Cloud Drive Storage 1 Bulan</li>
+                        </ul>
+                        <a href="https://wa.me/6285175200452?text=Halo%20Nineetiestudio!%20%E2%9C%A8%0A%0ASaya%20tertarik%20dengan%20*Combo%20Silver%20(1.650k)*.%20Mohon%20info%20jadwal.%20Terima%20kasih!" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            Reservasi Paket Ini
+                        </a>
+                    </div>
+
+                    <!-- Combo Gold -->
+                    <div class="pricing-card featured">
+                        <div class="package-meta">
+                            <span class="package-badge badge-gold">Combo Gold</span>
+                            <span class="package-duration"><i class="fa-regular fa-clock"></i> 4 Jam</span>
+                        </div>
+                        <h3>Combo Foto & Video 4 Jam</h3>
+                        <p>Paket komprehensif akad nikah, lamaran, atau wisuda dengan liputan video sinematik.</p>
+                        <div class="package-price-wrap">
+                            <div class="package-price">2.450k <span>/ sesi</span></div>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="fa-solid fa-check"></i> 1 Photographer + 1 Videographer + 1 Asisten</li>
+                            <li><i class="fa-solid fa-check"></i> 100 Foto Edit Pilihan Resolusi Tinggi</li>
+                            <li><i class="fa-solid fa-check"></i> 1 Video Teaser Instagram/TikTok (60 Detik)</li>
+                            <li><i class="fa-solid fa-check"></i> 1 Video Dokumenter Acara (2-3 Menit)</li>
+                            <li><i class="fa-solid fa-check"></i> 100% Seluruh File Mentahan Lengkap</li>
+                        </ul>
+                        <a href="https://wa.me/6285175200452?text=Halo%20Nineetiestudio!%20%E2%9C%A8%0A%0ASaya%20tertarik%20dengan%20*Combo%20Gold%20(2.450k)*.%20Mohon%20info%20jadwal.%20Terima%20kasih!" target="_blank" rel="noopener noreferrer" class="btn btn-gold">
+                            Pilih Paket Rekomendasi
+                        </a>
+                    </div>
+
+                    <!-- Combo Diamond -->
+                    <div class="pricing-card">
+                        <div class="package-meta">
+                            <span class="package-badge badge-diamond">Combo Diamond</span>
+                            <span class="package-duration"><i class="fa-regular fa-clock"></i> 6-8 Jam</span>
+                        </div>
+                        <h3>Combo All-In Wedding</h3>
+                        <p>Liputan lengkap persiapan, akad, hingga resepsi malam dengan kru multi-kamera.</p>
+                        <div class="package-price-wrap">
+                            <div class="package-price">3.500k <span>/ sesi</span></div>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="fa-solid fa-check"></i> 2 Photographers + 1 Videographer + 1 Asisten</li>
+                            <li><i class="fa-solid fa-check"></i> 150+ Foto Edit Resolusi Penuh</li>
+                            <li><i class="fa-solid fa-check"></i> 1 Video Cinematic Teaser (1 Menit)</li>
+                            <li><i class="fa-solid fa-check"></i> 1 Video Highlight Sinematik (3-5 Menit)</li>
+                            <li><i class="fa-solid fa-check"></i> Free Box Flashdisk Kayu Eksklusif & Drive 2 Bulan</li>
+                        </ul>
+                        <a href="https://wa.me/6285175200452?text=Halo%20Nineetiestudio!%20%E2%9C%A8%0A%0ASaya%20tertarik%20dengan%20*Combo%20Diamond%20(3.500k)*.%20Mohon%20info%20jadwal.%20Terima%20kasih!" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            Reservasi Paket Ini
+                        </a>
+                    </div>
                 </div>
+
+                <!-- Interactive Pricing Calculator Widget -->
+                <div class="calculator-box" id="price-calculator">
+                    <div class="text-center" style="max-width: 600px; margin: 0 auto 2.5rem;">
+                        <div class="sub-header-pill">
+                            <i class="fa-solid fa-calculator"></i>
+                            <span>Custom Simulator</span>
+                        </div>
+                        <h2>Kalkulator Estimasi Paket</h2>
+                        <p>Sesuaikan paket dasar dengan kebutuhan ekstra Anda untuk mendapatkan estimasi biaya akurat seketika.</p>
+                    </div>
+
+                    <div class="calc-grid">
+                        <div>
+                            <div class="calc-option-group">
+                                <label for="calc-package" class="calc-label">1. Pilih Paket Dasar</label>
+                                <select id="calc-package" class="calc-select">
+                                    <option value="silver-1" data-price="650000">Paket Silver 1 (1 Jam Foto) — Rp650.000</option>
+                                    <option value="silver-2" data-price="850000">Paket Silver 2 (2 Jam Foto) — Rp850.000</option>
+                                    <option value="gold-1" data-price="1250000" selected>Paket Gold 1 (3 Jam Foto) — Rp1.250.000 [Terfavorit]</option>
+                                    <option value="gold-2" data-price="1650000">Paket Gold 2 (4 Jam Foto) — Rp1.650.000</option>
+                                    <option value="diamond" data-price="2200000">Paket Diamond (6 Jam Foto Full) — Rp2.200.000</option>
+                                    <option value="combo-silver" data-price="1650000">Combo Silver (2 Jam Foto + Video) — Rp1.650.000</option>
+                                    <option value="combo-gold" data-price="2450000">Combo Gold (4 Jam Foto + Video) — Rp2.450.000</option>
+                                    <option value="combo-diamond" data-price="3500000">Combo Diamond (Full Day Foto + Video) — Rp3.500.000</option>
+                                </select>
+                            </div>
+
+                            <div class="calc-option-group">
+                                <label class="calc-label">2. Pilih Add-On Tambahan</label>
+                                <div class="calc-addons-list">
+                                    <label class="calc-addon-item">
+                                        <div class="calc-addon-left">
+                                            <input type="checkbox" class="calc-checkbox" data-name="Tambahan 1 Jam Liputan (+150k)" data-price="150000">
+                                            <span>Tambahan Durasi 1 Jam Liputan</span>
+                                        </div>
+                                        <strong style="color: var(--gold-400);">+Rp150.000</strong>
+                                    </label>
+
+                                    <label class="calc-addon-item">
+                                        <div class="calc-addon-left">
+                                            <input type="checkbox" class="calc-checkbox" data-name="Tambahan 1 Fotografer Kru (+350k)" data-price="350000">
+                                            <span>Tambahan 1 Fotografer Kru Cadangan</span>
+                                        </div>
+                                        <strong style="color: var(--gold-400);">+Rp350.000</strong>
+                                    </label>
+
+                                    <label class="calc-addon-item">
+                                        <div class="calc-addon-left">
+                                            <input type="checkbox" class="calc-checkbox" data-name="Video Teaser Sinematik 1 Menit (+450k)" data-price="450000">
+                                            <span>Video Teaser Sinematik 1 Menit (Reels/TikTok)</span>
+                                        </div>
+                                        <strong style="color: var(--gold-400);">+Rp450.000</strong>
+                                    </label>
+
+                                    <label class="calc-addon-item">
+                                        <div class="calc-addon-left">
+                                            <input type="checkbox" class="calc-checkbox" data-name="Cetak Album Kolase Eksklusif (+500k)" data-price="500000">
+                                            <span>Cetak Album Kolase 20 Halaman Hardcover</span>
+                                        </div>
+                                        <strong style="color: var(--gold-400);">+Rp500.000</strong>
+                                    </label>
+
+                                    <label class="calc-addon-item">
+                                        <div class="calc-addon-left">
+                                            <input type="checkbox" class="calc-checkbox" data-name="Same-Day Edit Preview 24 Jam (+250k)" data-price="250000">
+                                            <span>Same-Day Edit Preview Cepat (24 Jam)</span>
+                                        </div>
+                                        <strong style="color: var(--gold-400);">+Rp250.000</strong>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sticky Summary Box -->
+                        <div>
+                            <div class="calc-summary-card">
+                                <span class="calc-total-label">Estimasi Biaya Paket Anda</span>
+                                <div class="calc-total-amount" id="calc-total-val">Rp1.250.000</div>
+                                <p style="font-size: 0.88rem; margin-bottom: 1.8rem; color: var(--text-muted);">
+                                    Estimasi sudah mencakup seluruh benefit paket dasar dan add-on yang dipilih. Bebas ongkir area Jakarta*.
+                                </p>
+                                <a href="#" id="calc-wa-btn" target="_blank" rel="noopener noreferrer" class="btn btn-gold" style="width: 100%;">
+                                    <i class="fa-brands fa-whatsapp"></i> Booking Estimasi Ini
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+        </section>
+    </main>
 
-            <!-- Terms -->
-            <div class="terms-box reveal">
-                <h2 style="margin-bottom: 1.5rem;"><i class="fa-solid fa-file-contract"
-                        style="color: var(--charcoal);"></i> Syarat & Ketentuan</h2>
-                <ul>
-                    <li>Booking dicatat setelah DP Rp 100.000</li>
-                    <li>Pelunasan maksimal H+1 setelah acara</li>
-                    <li>File dikirim setelah pelunasan</li>
-                    <li>Reschedule maksimal H-3 (charge 100k jika mendadak)</li>
-                    <li>Editing selesai maksimal 10 hari kerja</li>
-                </ul>
-                <a href="terms.html" class="btn btn-outline magnetic" style="margin-top: 1.5rem;">Lihat Selengkapnya</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
+    <!-- Luxury Footer -->
     <footer class="footer">
-        <div class="container footer-bottom">
-            <p>&copy; 2026 Nineetiestudio. All Rights Reserved.</p>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand-logo">
+                        <img src="assets/images/logo.png" alt="Nineetiestudio" width="130" height="42">
+                    </a>
+                    <p>High-Resolution Memories with Timeless Elegance. Mengabadikan momen hidup Anda menjadi memori visual yang abadi.</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/nineetiestudio" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/6285175200452" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="footer-heading">Navigasi</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Layanan</a></li>
+                        <li><a href="pricelist.html">Daftar Harga</a></li>
+                        <li><a href="gallery.html">Portofolio</a></li>
+                        <li><a href="terms.html">Ketentuan Booking</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="footer-heading">Kategori Sesi</h5>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Wedding & Akad</a></li>
+                        <li><a href="services.html">Wisuda & Kampus</a></li>
+                        <li><a href="services.html">Event & Gathering</a></li>
+                        <li><a href="services.html">Birthday & Party</a></li>
+                        <li><a href="services.html">Prewedding Editorial</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="footer-heading">Kontak & Domain Resmi</h5>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.8rem;"><i class="fa-solid fa-location-dot" style="color: var(--gold-400); margin-right: 0.5rem;"></i> Jakarta & Sekitarnya</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.8rem;"><i class="fa-brands fa-whatsapp" style="color: var(--gold-400); margin-right: 0.5rem;"></i> +62 851-7520-0452</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 0.8rem;"><i class="fa-solid fa-globe" style="color: var(--gold-400); margin-right: 0.5rem;"></i> nineetiestudio.biz.id</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nineetiestudio. All Rights Reserved. Domain Resmi: <a href="https://nineetiestudio.biz.id" style="color: var(--gold-400);">nineetiestudio.biz.id</a></p>
+                <p><a href="terms.html">Kebijakan Privasi & Ketentuan Layanan</a></p>
+            </div>
         </div>
     </footer>
 
-    <a href="https://wa.me/6285175200452" class="whatsapp-float"><i class="fa-brands fa-whatsapp"></i></a>
-    <script src="assets/js/script.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/script.js" defer></script>
 </body>
-
 </html>
