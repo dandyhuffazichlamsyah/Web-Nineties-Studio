@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ig_1",
+    "filename": "ig_1.jpg",
+    "image_path": "assets/images/instagram/ig_1.jpg",
+    "title": "Wisuda Portraiture - Nineetiestudio",
+    "category": "wisuda",
+    "alt": "Dokumentasi Wisuda Jakarta by Nineetiestudio",
+    "caption": "Momen kelulusan berharga dengan warna natural dan senyum bangga.",
+    "instagram_link": "https://www.instagram.com/nineetiestudio/p/DT6W6N6k_Il/"
+  },
+  {
+    "id": "ig_2",
+    "filename": "ig_2.jpg",
+    "image_path": "assets/images/instagram/ig_2.jpg",
+    "title": "Wedding Holy Matrimony - Nineetiestudio",
+    "category": "wedding",
+    "alt": "Dokumentasi Akad & Wedding by Nineetiestudio",
+    "caption": "Ikatan janji suci penuh haru dan keindahan abadi.",
+    "instagram_link": "https://www.instagram.com/nineetiestudio/p/DT4u2QREwge/"
+  },
+  {
+    "id": "ig_3",
+    "filename": "ig_3.jpg",
+    "image_path": "assets/images/instagram/ig_3.jpg",
+    "title": "Live Stage Event - Nineetiestudio",
+    "category": "event",
+    "alt": "Dokumentasi Acara & Festival Musik",
+    "caption": "Sorotan panggung dan dinamika konser yang tertangkap tajam.",
+    "instagram_link": "https://www.instagram.com/nineetiestudio/p/DZFYCLWE7qz/"
+  },
+  {
+    "id": "ig_4",
+    "filename": "ig_4.jpg",
+    "image_path": "assets/images/instagram/ig_4.jpg",
+    "title": "Sweet 17th Birthday - Nineetiestudio",
+    "category": "birthday",
+    "alt": "Perayaan Ulang Tahun & Family Session",
+    "caption": "Keceriaan dan kehangatan tawa bersama keluarga terkasih.",
+    "instagram_link": "https://www.instagram.com/nineetiestudio/p/DZDhqmfE7cn/"
+  },
+  {
+    "id": "ig_5",
+    "filename": "ig_5.jpg",
+    "image_path": "assets/images/instagram/ig_5.jpg",
+    "title": "Editorial Prewedding - Nineetiestudio",
+    "category": "prewedding",
+    "alt": "Sesi Prewedding Sinematik & Elegan",
+    "caption": "Momen cinta dalam harmoni pencahayaan hangat dan berkelas.",
+    "instagram_link": "https://www.instagram.com/nineetiestudio/p/DZC-wt5Ewi2/"
+  },
+  {
+    "id": "ig_6",
+    "filename": "ig_6.jpg",
+    "image_path": "assets/images/instagram/ig_6.jpg",
+    "title": "Graduation Celebration - Nineetiestudio",
+    "category": "wisuda",
+    "alt": "Foto Wisuda Kampus Jakarta",
+    "caption": "Pencapaian akademik yang diabadikan dengan komposisi estetik.",
+    "instagram_link": "https://www.instagram.com/nineetiestudio/p/DT_j0fEk5jZ/"
+  }
+]
