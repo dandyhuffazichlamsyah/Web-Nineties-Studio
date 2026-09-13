@@ -65,3 +65,26 @@ Client requested official business WhatsApp number updated to `085174350715` acr
    - Stored all 71 images locally in `assets/images/instagram/ig_1.jpg` to `ig_71.jpg` to prevent CDN link expiration.
 3. **Cache Busting Strategy:**
    - Elevated asset cache busters to `?v=4.0` across all 6 HTML templates.
+
+---
+
+## ADR-004: Fluid Mobile-First Responsive Design (RWD) Overhaul
+
+### Status
+Accepted
+
+### Context
+Client reported that mobile layout previously felt bulky, heavy, or chunky ("gendut gitu jelek") due to rigid grid minimums (320px), oversized heading typography on small viewports, inline grid column spans overriding mobile rules, multi-line pill wrap stacks, and bulky card paddings.
+
+### Decision
+1. **Fluid Typography & Spacing Scales:**
+   - Redefined `h1`, `h2`, `h3`, and `.lead` with viewport-proportional `clamp()` values specifically tuned for mobile (e.g., `h1` at `clamp(1.75rem, 5.5vw, 2.25rem)`).
+   - Reduced `--section-padding` to `42px 0` and mobile container padding to `1.15rem` (down to `0.95rem` on `<480px`).
+2. **Compact & Slim Component Structure:**
+   - Refined hero visual frame to max `290px` width (and `260px` on small screens) with floating badges securely positioned within viewport bounds.
+   - Bento grid and inline `grid-column: span *` fully neutralized on mobile via `display: flex; flex-direction: column; width: 100%;`.
+   - Card paddings (`.pricing-card`, `.bento-card`, `.calculator-box`, `.form-card`, `.cta-card`) scaled down to `1.2rem - 1.4rem`.
+   - Native-feel horizontal smooth-swipe track for filter pills (`.filter-pills`) and pricing tabs (`.pricing-tabs`) with hidden scrollbars.
+   - Gallery media aspect ratio tuned to `4/3` on single-column mobile to prevent disproportionate height.
+3. **Cache Invalidation:**
+   - Elevated cache-busting token to `?v=5.0` on all CSS and JavaScript tags across all 6 pages.
